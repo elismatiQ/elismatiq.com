@@ -1,12 +1,8 @@
-# Contributor Covenant Code of Conduct for the [`project_name`] project
+# Contributor Covenant Code of Conduct for the [`elismatiq.com`] project
 
 ([Français](#Code-de-conduite-pour-le-projet-nom-du-projet))
 
-Contributors to repositories hosted in [`project_name`] are expected to follow the Contributor Covenant Code of Conduct, and those working within Government are also expected to follow the Values and Ethics Code for the Public Sector
-
-## Values and Ethics Code for the Public Sector
-
-The [Values and Ethics Code for the Public Sector](https://www.tbs-sct.gc.ca/pol/doc-eng.aspx?id=25049)
+Contributors to repositories hosted in [`elismatiQ`] are expected to follow the Contributor Covenant Code of Conduct.
 
 ## Our Pledge
 
@@ -19,7 +15,7 @@ Examples of behavior that contributes to creating a positive environment include
 * Using welcoming and inclusive language
 * Being respectful of differing viewpoints and experiences
 * Gracefully accepting constructive criticism
-* Focusing on what is best for the department
+* Focusing on what is best for the community
 * Showing empathy towards other members
 
 Examples of unacceptable behavior by participants include:
@@ -38,13 +34,13 @@ Project maintainers have the right and responsibility to remove, edit, or reject
 
 ## Scope
 
-This Code of Conduct applies both within project spaces and in public spaces when an individual is representing the project, members or [`department`].
-Examples of representing a project, members or [`department`] include using an official project e-mail address, posting via an official social media account, or acting as an appointed representative at an online or offline event.
+This Code of Conduct applies both within project spaces and in public spaces when an individual is representing the project, members or the organization.
+Examples of representing a project, members or the organization include using an official project e-mail address, posting via an official social media account, or acting as an appointed representative at an online or offline event.
 Representation of a project may be further defined and clarified by project maintainers.
 
 ## Enforcement
 
-Instances of abusive, harassing, or otherwise unacceptable behavior may be reported by contacting the project team at [`project email`].
+Instances of abusive, harassing, or otherwise unacceptable behavior may be reported by contacting the project team at info@elismatiq.com.
 All complaints will be reviewed and investigated and will result in a response that is deemed necessary and appropriate to the circumstances.
 The project team is obligated to maintain confidentiality with regard to the reporter of an incident.
 Further details of specific enforcement policies may be posted separately.
@@ -56,18 +52,16 @@ Project maintainers who do not follow or enforce the Code of Conduct in good fai
 This Code of Conduct is adapted from the [Contributor Covenant][homepage], version 1.4,
 available at [https://www.contributor-covenant.org/version/1/4/code-of-conduct.html](https://www.contributor-covenant.org/version/1/4/code-of-conduct.html)
 
-[homepage]: https://www.contributor-covenant.org
-
 This Code of Conduct is also inspired by GDS' `alphagov` [Code of conduct](https://github.com/alphagov/code-of-conduct)
 
 ---
 <!--markdownlint-disable MD025-->
-# Code de conduite pour le projet [`nom du projet`]
+# Code de conduite pour le projet [`elismatiq.com`]
 <!--markdownlint-enable MD025-->
 
 ([English](#Contributor-Covenant-Code-of-Conduct-for-the-projectname-project))
 
-Les contributeurs aux dépôts hébergés dans [`nom du projet`] sont tenus de respecter le Code de conduite du Pacte des contributeurs, et ceux qui travaillent au sein du gouvernement sont également tenus de respecter le Code de valeurs et d'éthique du secteur public.
+Les contributeurs aux dépôts hébergés dans [`elismatiQ`] sont tenus de respecter le Code de conduite du Pacte des contributeurs.
 
 ## Notre engagement
 
@@ -88,7 +82,7 @@ Voici des exemples de comportements inacceptables de la part des participants :
 * L'utilisation d'un langage ou d'images sexualisés et d'une attention sexuelle importunée, ou percées
 * Trollage, commentaires insultants ou méprisants, et attaques personnelles ou politiques
 * Harcèlement public ou privé
-* La publication d'informations privées d'autrui, telles que des informations physiques ou électroniques. adresse, sans autorisation explicite
+* La publication d'informations privées d'autrui, telles que des informations physiques ou électroniques, sans autorisation explicite
 * Tout autre comportement qui pourrait raisonnablement être considéré comme inapproprié dans le cadre d'une enquête du contexte professionnel
 
 ## Nos responsabilités
@@ -105,7 +99,7 @@ La représentation d'un projet peut être mieux défini et clarifié par les res
 
 ## Application des règles
 
-Les cas de comportement abusif, de harcèlement ou d'autres comportements inacceptables peuvent être rapportés en communiquant avec l'équipe de projet à l'adresse suivante :[`courriel`].
+Les cas de comportement abusif, de harcèlement ou d'autres comportements inacceptables peuvent être rapportés en communiquant avec l'équipe de projet à l'adresse suivante :[`info@elismatiq.com`].
 Toutes les plaintes feront l'objet d'un examen et d'une enquête et donneront lieu à une réponse qui est jugée nécessaire et appropriée dans les circonstances.
 L'équipe de projet est dans l'obligation de respecter la confidentialité à l'égard du déclarant d'un incident.
 De plus amples détails sur les politiques d'application spécifiques peuvent être affichés séparément.
@@ -117,6 +111,7 @@ Les responsables de projet qui ne respectent pas ou n'appliquent pas le Code de 
 Le présent Code de conduite est adapté de la version 1.4 du [Pacte du contributeur][page d'accueil],
 disponible à l'adresse [https://www.contributor-covenant.org/version/1/4/code-of-conduct.html](https://www.contributor-covenant.org/version/1/4/code-of-conduct.html)
 
-[page d'accueil]: https://www.contributor-covenant.org
-
 Le présent Code de conduite s'inspire également du " Code de conduite " du [alphaGov](https://github.com/alphagov/code-of-conduct) de GDS.
+
+[homepage]: https://www.contributor-covenant.org
+[page d'accueil]: https://www.contributor-covenant.org
