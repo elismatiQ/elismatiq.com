@@ -55,8 +55,9 @@ available at [https://www.contributor-covenant.org/version/1/4/code-of-conduct.h
 This Code of Conduct is also inspired by GDS' `alphagov` [Code of conduct](https://github.com/alphagov/code-of-conduct)
 
 ---
-
+<!--markdownlint-disable MD025-->
 # Code de conduite pour le projet [`elismatiq.com`]
+<!--markdownlint-enable MD025-->
 
 ([English](#Contributor-Covenant-Code-of-Conduct-for-the-projectname-project))
 
