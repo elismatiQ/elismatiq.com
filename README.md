@@ -1,182 +1,63 @@
-[![Netlify + Astro](https://user-images.githubusercontent.com/43764894/223559085-8ff69d2f-4247-427f-a3a6-d2036b00082a.png)](https://ntl.fyi/3LZGn73)
+# Accessible Astro Starter
 
-# Astro Quickstart Template   
+![social-preview-image](https://user-images.githubusercontent.com/3909046/219942674-9894853e-def8-4180-84b8-6b577dacfcaa.png)
 
-This is a bare-bones Astro project that has everything you need to quickly deploy it to [Netlify](https://netlify.com). 
+Accessible Astro Starter is a ready to use, SEO and a11y friendly blogging theme. It contains plenty of accessible components to build several page types, Tailwind CSS to help you build faster and example pages such as a dynamic Blog, 404, Markdown and MDX. This theme is designed to help you build your project faster and provide a solid base for accessibility!
 
-Hate reading, here's a video: https://youtu.be/SknFflQVOys!
+🚀 [Live Preview](https://accessible-astro.netlify.app/)
 
-Love reading, here's blog post: www.netlify.app/blog/deploy-your-astro-project-fast/!
+## ♿ (Accessibility) Features
 
-## Table of Contents:
+- Tailwind CSS support
+- Prettier integration with `prettier-plugin-astro` and `prettier-plugin-tailwind`
+- ESLint integration with strict accessibility settings for `eslint-plugin-jsx-a11y`
+- Markdown and MDX support with examples included in the theme
+- Uses the awesome `astro-icon` package for the icons
+- Excellent Lighthouse/PageSpeed scores
+- Accessible landmarks such as `header`, `main`, `footer`, `section` and `nav`
+- Outline focus indicator which works on dark and light backgrounds
+- Several `aria` attributes which provide a better experience for screen reader users
+- `[...page].astro` and `[post].astro` demonstrate the use of dynamic routes and provide a basic blog with breadcrumbs and pagination
+- `404.astro` provides a custom 404 error page which you can adjust to your needs
+- `Header.astro` component included in the `DefaultLayout.astro` layout
+- `Footer.astro` component included in the `DefaultLayout.astro` layout
+- `SkipLinks.astro` component to skip to either the main menu or the main content
+- `Navigation.astro` component with keyboard accessible (dropdown) navigation (arrow keys, escape key)
+- `ResponsiveToggle.astro` component with an accessible responsive toggle button for the mobile navigation
+- `DarkMode.astro` component toggle with accessible button and a user system preferred color scheme setting
+- `SiteMeta.astro` SEO component for setting custom meta data on different pages
+- `.sr-only` utility class for screen reader only text content (hides text visually)
+- `prefers-reduced-motion` disables animations for users that have this preference turned on
+- Ships with many components such as Accordions, Breadcrumbs, Modals, Pagination [and many more](https://accessible-astro.dev/accessible-components)
+- A collection of utility classes such as breakpoints, button classes, font settings, resets and outlines in `src/assets/scss/base`
 
-- [Quick Setup + Deploy Option](#quick-setup--deploy-option)
-- [Regular Setup](#regular-setup)
-  - [Cloning + Install Packages](#1-cloning--install-packages)
-  - [Deploying](#2-deploying)
-- [Astro + Netlify Resources](#astro--netlify-resources)
-- [Project Structure](#project-structure)
-- [Styling](#styling)
-  - [Notes on Styling](#notes-on-styling)
-  - [Remove Styling](#remove-styling)
-- [Commands](#commands)
-- [Testing](#testing)
-  - [Included Default Testing](#included-default-testing)
-  - [Removing Renovate](#removing-renovate)
-  - [Removing Cypress](#removing-cypress)
-- [Want to learn more?](#want-to-learn-more)
+## 🚀 Getting started
 
-## Quick Setup + Deploy Option
-
-Click this button and it will help you create a new repo, create a new Netlify project, and deploy!
-
-[![Deploy to Netlify Button](https://www.netlify.com/img/deploy/button.svg)](https://app.netlify.com/start/deploy?repository=https://github.com/netlify-templates/astro-quickstart)
-
-## Regular Setup
-
- ### 1. Cloning + Install Packages
-
-  - Clone this repo with one of these options:
-
-    - Click the 'Use this template' button at the top of the page
-    - Or via the command line `git clone https://github.com/netlify-templates/astro-quickstart`
-
-  - Then install the necessary packages and run the project locally to make sure everything works.
-
-    ```bash
-    npm install
-    npm run dev
-    ```
-
-  > Alternatively, you can run this locally with [the Netlify CLI](https://docs.netlify.com/cli/get-started/)'s by running the `netlify dev` command for more options like receiving a live preview to share (`netlify dev --live`) and the ability to test [Netlify Functions](https://www.netlify.com/products/functions) and [redirects](https://docs.netlify.com/routing/redirects/). 
-
-  ### 2. Deploying
-  - Install the Netlify CLI globally `npm install netlify-cli -g`
-    
-  - Run `npm run build`
-
-  - Then use the `netlify deploy` for a deploy preview link or `netlify deploy --prod` to deploy to production
-
-  Here are a few other ways you can deploy this template:
-    
-  - Use the Netlify CLI's create from template command `netlify sites:create-template astro-quickstart` which will create a repo, Netlify project, and deploy it
-    
-  - If you want to utilize continuous deployment through GitHub webhooks, run the Netlify command `netlify init` to create a new project based on your repo or `netlify link` to connect your repo to an existing project
-
-## Astro + Netlify Resources
-
-Here are some resources to help you on your Astro + Netlify coding fun!
-
-- [Astro on Netlify Integration Page](https://docs.netlify.com/integrations/frameworks/astro)
-
-- [Build wicked fast sites with Astro: An Introduction](https://www.netlify.com/blog/2021/07/08/build-wicked-fast-sites-with-astro-an-introduction/#main)
-
-- [A Template for Building Shopify Stores with Astro and the Storefront API](https://www.netlify.com/blog/2021/07/23/build-a-modern-shopping-site-with-astro-and-serverless-functions)
-
-Hope this template helps :) Happy coding 👩🏻‍💻!
-
----
-
-## Project Structure
-
-Inside of your Astro project, you'll see the following folders and files:
-
-```
-/
-├── public/
-│   └── favicon.ico
-├── src/
-│   ├── components/
-│   │   └── Layout.astro
-│   ├── pages/
-│   │   └── index.astro
-│   └── style/
-│       └── demo-styling.css
-└── package.json
-```
-
-Astro looks for `.astro` or `.md` files in the `src/pages/` directory. Each page is exposed as a route based on its file name.
-
-There's nothing special about `src/components/`, but that's where we like to put any Astro/React/Vue/Svelte/Preact components or layouts.
-
-Any static assets, like images, can be placed in the `public/` directory.
-
-## Styling
-
-We've added some modern styling to this template using css within an external stylesheet, this will allow you to easily remove our styling and add in your own. 
-
-If you decide that you want to keep our styling you can review our style notes below. 
-
-### Notes on Styling
-
-The variables below give you the ability to change the gradient colors of the blobs and are interpolated into the URL string of the background-img within the body. 
-
-```css
-// Controls the blob blur gradient colors within the main tag's svg
---top-right-blur-1: #20C6B7;
---top-right-blur-2: #4D9ABF;
---bttm-left-blur-1: #FF5C02;
---bttm-left-blur-2: #FFCDB1;
-```
-
-### Remove Styling
-
-If you decide that our styling is not for you, all you'll need to do is remove the [demo-styling.css](https://github.com/netlify-templates/astro-quickstart/tree/main/src/style/demo-styling.css) file. 
-
-
-## Commands
-
-All commands are run from the root of the project, from a terminal:
+Clone this theme locally and run any of the following commands in your terminal:
 
 | Command           | Action                                       |
 | :---------------- | :------------------------------------------- |
 | `npm install`     | Installs dependencies                        |
-| `npm run dev`     | Starts local dev server at `localhost:3000`  |
+| `npm run dev`     | Starts local dev server at `localhost:4321`  |
 | `npm run build`   | Build your production site to `./dist/`      |
 | `npm run preview` | Preview your build locally, before deploying |
 
-## Testing
+## 📦 Other Accessible Astro projects
 
-### Included Default Testing
+- [Accessible Astro Dashboard](https://github.com/markteekman/accessible-astro-dashboard/)
+- [Accessible Astro Components](https://github.com/markteekman/accessible-astro-components/)
 
-We’ve included some tooling that helps us maintain these templates. This template currently uses:
+## ❤️ Helping out
 
-- [Renovate](https://www.mend.io/free-developer-tools/renovate/) - to regularly update our dependencies
-- [Cypress](https://www.cypress.io/) - to run tests against how the template runs in the browser
-- [Cypress Netlify Build Plugin](https://github.com/cypress-io/netlify-plugin-cypress) - to run our tests during our build process
+If you find that something isn't working right then I'm always happy to hear it to improve this starter! You can contribute in many ways and forms. Let me know by either:
 
-If your team is not interested in this tooling, you can remove them with ease!
+1. [Filing an issue](https://github.com/markteekman/accessible-astro-starter/issues)
+2. [Submitting a pull request](https://github.com/markteekman/accessible-astro-starter/pulls)
+3. [Starting a discussion](https://github.com/markteekman/accessible-astro-starter/discussions)
+4. [Buying me a coffee!](https://www.buymeacoffee.com/markteekman)
 
-### Removing Renovate
+## ☕ Thank you!
 
-In order to keep our project up-to-date with dependencies we use a tool called [Renovate](https://github.com/marketplace/renovate). If you’re not interested in this tooling, delete the `renovate.json` file and commit that onto your main branch.
+A big thank you to the creators of the awesome Astro static site generator and to all using this starter to make the web a bit more accessible for all people around the world :)
 
-### Removing Cypress
-
-For our testing, we use [Cypress](https://www.cypress.io/) for end-to-end testing. This makes sure that we can validate that our templates are rendering and displaying as we’d expect. By default, we have Cypress not generate deploy links if our tests don’t pass. If you’d like to keep Cypress and still generate the deploy links, go into your `netlify.toml` and delete the plugin configuration lines:
-
-```diff
-[[plugins]]
-  package = "netlify-plugin-cypress"
--  [plugins.inputs.postBuild]
--    enable = true
--
--  [plugins.inputs]
--    enable = false 
-```
-
-If you’d like to remove the `netlify-plugin-cypress` build plugin entirely, you’d need to delete the entire block above instead. And then make sure sure to remove the package from the dependencies using:
-
-```bash
-npm uninstall -D netlify-plugin-cypress
-```
-
-And lastly if you’d like to remove Cypress entirely, delete the entire `cypress` folder and the `cypress.config.ts` file. Then remove the dependency using:
-
-```bash
-npm uninstall cypress
-```
-
-## Want to learn more?
-
-Feel free to check [our documentation](https://github.com/withastro/astro) or jump into our [Discord server](https://astro.build/chat).
+[![buymeacoffee-button](https://user-images.githubusercontent.com/3909046/150683481-be070424-7bb0-4dd7-a3cb-43b5605163f5.png)](https://www.buymeacoffee.com/markteekman)
