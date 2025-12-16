@@ -1,0 +1,150 @@
+/* Blog Zig-Zag Layout */
+
+.blog-listing-section {
+  padding-block: var(--space-2xl);
+}
+
+.blog-zig-zag {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-2xl);
+}
+
+.blog-row {
+  display: grid;
+  gap: var(--space-l);
+  align-items: center; /* Vertically center content */
+}
+
+/* Image styling */
+.blog-row-image-wrapper {
+  width: 100%;
+  overflow: hidden;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.05);
+}
+
+.blog-row-image {
+  width: 100%;
+  height: auto;
+  display: block;
+  transition: transform var(--transition-slow);
+}
+
+.blog-row-image-wrapper:hover .blog-row-image {
+  transform: scale(1.03);
+}
+
+/* Text Content Styling */
+.blog-row-header h3 {
+  font-size: var(--step-2);
+  font-weight: 700;
+  margin-bottom: var(--space-xs);
+  line-height: 1.1;
+}
+
+.blog-row-header h3 a {
+  text-decoration: none;
+  color: var(--color-gray-900);
+  transition: color var(--transition-fast);
+}
+
+.blog-row-header h3 a:hover {
+  color: var(--color-primary);
+}
+
+.blog-row-meta {
+  font-size: var(--step--1);
+  color: var(--color-gray-500);
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  margin-top: var(--space-2xs);
+}
+
+.blog-row-meta a {
+  color: var(--color-gray-900);
+  text-decoration: none;
+  font-weight: 700;
+}
+
+.blog-row-excerpt p {
+  font-size: var(--step-0);
+  color: var(--color-gray-600);
+  line-height: 1.6;
+  margin-bottom: 0;
+}
+
+.blog-row-excerpt .read-more {
+  display: inline-block;
+  margin-top: var(--space-xs);
+  font-size: var(--step--1);
+  font-weight: 700;
+  color: var(--color-primary);
+  text-decoration: none;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+/* Responsive Layout Logic */
+
+/* Mobile: Stack everything. Image first? Or Title first? 
+   Original design had explicit orders. 
+   Common pattern: Image -> Title -> Excerpt, or vertically stacked.
+*/
+.blog-row {
+  grid-template-columns: 1fr;
+}
+
+/* Header usually comes after image on mobile often, or before. 
+   Let's just keep source order normal and stack.
+*/
+
+/* Desktop (Large Screens) - The 3 Column Layout */
+@media (min-width: 64rem) {
+  .blog-row {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  /* 
+   Zig-Zag Logic via Grid Column Placement 
+   
+   ODD ITEMS (Image Left):
+   [Image] [Header] [Excerpt]
+  */
+  .blog-row.odd .blog-row-image-wrapper {
+    grid-column: 1 / 2;
+    grid-row: 1;
+  }
+  .blog-row.odd .blog-row-header {
+    grid-column: 2 / 3;
+    grid-row: 1;
+    padding-inline: var(--space-m);
+  }
+  .blog-row.odd .blog-row-excerpt {
+    grid-column: 3 / 4;
+    grid-row: 1;
+  }
+
+  /* 
+   EVEN ITEMS (Image Right):
+   [Header] [Excerpt] [Image]
+  */
+  .blog-row.even .blog-row-header {
+    grid-column: 1 / 2;
+    grid-row: 1;
+    text-align: right; /* Often looks better mirroring the left layout? 
+                        Or keep left aligned? 
+                        The screenshot seems to have left alignment for text generally, 
+                        or maybe mirrored. Let's keep strict grid placement first. */
+    padding-inline: var(--space-m);
+  }
+  .blog-row.even .blog-row-excerpt {
+    grid-column: 2 / 3;
+    grid-row: 1;
+    padding-inline: var(--space-m);
+  }
+  .blog-row.even .blog-row-image-wrapper {
+    grid-column: 3 / 4;
+    grid-row: 1;
+  }
+}

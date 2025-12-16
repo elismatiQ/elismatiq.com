@@ -1,0 +1,208 @@
+---
+layout: base.njk
+title: "David Elisma | Ingénieur de croissance"
+description: "J'architecte des plateformes d'IA souveraines et agnostiques pour le gouvernement du Canada."
+---
+<!-- Masthead / Hero Section -->
+<div class="masthead">
+  <!-- Texture Lines -->
+  <div class="lines">
+    <div class="lines-container">
+      <div class="line-col"></div>
+      <div class="line-col"></div>
+      <div class="line-col"></div>
+    </div>
+  </div>
+
+  <div class="container hero-container">
+    <div class="hero-content opener-box">
+      <h1 class="hero-name"><span class="text-primary">{{ 'greeting' | t }}</span> {{ 'iam' | t }}<br>David Elisma.</h1>
+      <p class="hero-role">{{ 'role' | t }}</p>
+      
+      <div class="hero-actions">
+        <a href="/fr/contact/" class="btn">{{ 'contactCta' | t }}</a>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- About Section -->
+<section class="section about-section" id="about">
+  <div class="container about-grid">
+    <div class="about-intro">
+      <h2 class="about-heading">{{ 'aboutHeading' | t | safe }}</h2>
+    </div>
+
+    <div class="about-image-wrapper">
+      <img src="/assets/img/about-portrait.jpg" alt="David Elisma" class="about-image" loading="lazy">
+    </div>
+
+    <div class="about-skills">
+      <ul class="skills-list">
+        {% for skill in locales.site.aboutList[lang] %}
+        <li>
+          <a href="#">
+            <span class="skill-number">0{{ loop.index }}.</span>
+            <span class="skill-name">{{ skill }}</span>
+          </a>
+        </li>
+        {% endfor %}
+      </ul>
+    </div>
+  </div>
+</section>
+
+<!-- Expertise Section -->
+<section class="section expertise-section" id="expertise">
+  <div class="container">
+    <div class="expertise-grid-layout">
+      
+      <div class="expertise-heading-col">
+        <h2 class="expertise-heading">{{ 'expertiseHeading' | t | safe }}</h2>
+      </div>
+
+      <div class="expertise-image-col">
+        <img src="/assets/img/expertise-portrait.jpg" alt="" class="expertise-image" loading="lazy">
+      </div>
+
+      <div class="expertise-text-col">
+        <p>{{ 'expertiseText' | t }}</p>
+      </div>
+    </div>
+
+    <!-- Capabilities Row -->
+    <div class="expertise-capabilities">
+      <div class="capabilities-grid">
+        {% for item in locales.site.expertiseList[lang] %}
+        <div class="capability-item">
+          <div class="capability-label">
+            <span>{{ item.name }}</span>
+          </div>
+          <!-- Visual Decorative Line (Full Width) -->
+          <div class="capability-line"></div>
+        </div>
+        {% endfor %}
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Experience Section -->
+<section id="experience" class="section">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-12">
+        <h2 class="mb-5">{{ locales.site.experienceHeading[lang] }}</h2>
+      </div>
+    </div>
+    
+    <div class="experience-list">
+      {% for item in locales.site.experienceList[lang] %}
+      <div class="experience-item">
+        <span class="experience-year">{{ item.year }}</span>
+        <div class="experience-header">
+           <img src="/assets/img/{{ item.logo }}" alt="{{ item.company }} Logo" class="experience-logo">
+           <div class="experience-details">
+              <h3 class="experience-role">{{ item.role }}</h3>
+              <h4 class="experience-company">{{ item.company }}</h4>
+           </div>
+        </div>
+        <p class="experience-desc">{{ item.description }}</p>
+      </div>
+      {% endfor %}
+    </div>
+    
+  </div>
+</section>
+
+
+<!-- Blog Section -->
+<section id="blog" class="section blog-listing-section">
+  <div class="container">
+    <div class="row mb-5">
+      <div class="col-lg-12">
+        <h2 class="my-0">{{ 'blogTitle' | t }}</h2>
+      </div>
+    </div>
+    
+    <div class="blog-zig-zag">
+      {% for post in collections.blogFr | reverse | batch(2) | first %}
+         {% set isEven = loop.index % 2 == 0 %}
+         <div class="blog-row {{ 'even' if isEven else 'odd' }}">
+           
+           <!-- Image Area -->
+           <div class="blog-row-image-wrapper">
+             <a href="{{ post.url }}">
+               {% if post.data.image %}
+                <img src="{{ post.data.image }}" alt="" class="blog-row-image">
+               {% else %}
+                 <!-- Placeholder -->
+                 <div style="background: var(--color-gray-100); width: 100%; height: 0; padding-bottom: 75%;"></div>
+               {% endif %}
+             </a>
+           </div>
+
+           <!-- Header Area -->
+           <div class="blog-row-header">
+             <h3><a href="{{ post.url }}">{{ post.data.title }}</a></h3>
+             <div class="blog-row-meta">
+               {% if post.data.category %}
+               <a href="#">{{ post.data.category | t }}</a>
+               {% endif %}
+               / {{ post.date | date("LLLL d, yyyy", lang) }}
+             </div>
+           </div>
+
+           <!-- Excerpt Area -->
+           <div class="blog-row-excerpt">
+             <p>{{ post.data.description }} <a href="{{ post.url }}" class="read-more">{{ 'readMore' | t }}</a></p>
+           </div>
+           
+         </div>
+      {% endfor %}
+    </div>
+
+  </div>
+</section>
+
+
+<!-- Contact Section -->
+<section id="contact" class="section contact-section">
+  <div class="container">
+    <div class="contact-layout">
+      <!-- Left Column: Info -->
+      <div class="contact-info-col">
+        <h2 class="contact-heading">{{ 'contactTitle' | t }}</h2>
+        <p class="contact-description">{{ 'contactDescription' | t }}</p>
+        
+        <div class="contact-detail-item">
+           <h3>{{ 'contactAddress' | t }}</h3>
+        </div>
+        
+        <div class="contact-detail-item">
+           <h3>{{ 'contactEmail' | t }}</h3>
+        </div>
+      </div>
+
+      <!-- Right Column: Form -->
+      <div class="contact-form-col">
+        <h3 class="contact-form-heading">{{ 'contactFormHeading' | t | safe }}</h3>
+        <form class="contact-form" name="contact-fr" method="POST" data-netlify="true">
+          <div class="form-group">
+            <input type="text" name="name" class="form-control" placeholder="{{ 'nameLabel' | t }}" required>
+          </div>
+          <div class="form-group">
+            <input type="email" name="email" class="form-control" placeholder="{{ 'emailLabel' | t }}" required>
+          </div>
+          <div class="form-group">
+            <textarea name="message" class="form-control" rows="4" placeholder="{{ 'messageLabel' | t }}" required></textarea>
+          </div>
+          <div class="form-group mb-0">
+            <button type="submit" class="btn">{{ 'contactBtn' | t }}</button>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+</section>
+

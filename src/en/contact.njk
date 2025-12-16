@@ -1,0 +1,40 @@
+---
+layout: page.njk
+title: "Contact"
+description: "Get in touch to discuss sovereign AI solutions for government."
+---
+
+<section class="contact-form">
+  <h2>{{ 'contactCta' | t }}</h2>
+  <p>Ready to modernize your digital infrastructure with sovereign AI solutions? Get in touch.</p>
+  
+  <form name="contact" method="POST" data-netlify="true" netlify-honeypot="bot-field">
+    <input type="hidden" name="form-name" value="contact">
+    <p class="hidden" style="display:none;">
+      <label>Don't fill this out: <input name="bot-field"></label>
+    </p>
+    
+    <div class="form-group">
+      <label class="form-label" for="name">{{ 'nameLabel' | t }}</label>
+      <input class="form-input" type="text" id="name" name="name" required>
+    </div>
+    
+    <div class="form-group">
+      <label class="form-label" for="email">{{ 'emailLabel' | t }}</label>
+      <input class="form-input" type="email" id="email" name="email" required>
+    </div>
+    
+    <div class="form-group">
+      <label class="form-label" for="message">{{ 'messageLabel' | t }}</label>
+      <textarea class="form-textarea" id="message" name="message" required></textarea>
+    </div>
+    
+    <button type="submit" class="btn">{{ 'sendButton' | t }}</button>
+  </form>
+</section>
+
+<section class="contact-info">
+  <h2>Contact Information</h2>
+  <p><strong>Email:</strong> <a href="mailto:{{ site.email }}">{{ site.email }}</a></p>
+  <p><strong>Location:</strong> {{ site.address }}</p>
+</section>

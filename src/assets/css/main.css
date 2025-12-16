@@ -1,0 +1,531 @@
+/* ==========================================================================
+   Main Stylesheet - elismatiq.com
+   ========================================================================== */
+
+/* Import design tokens and base styles */
+@import "tokens.css";
+@import "header.css";
+@import "hero.css";
+@import "experience.css";
+@import "blog.css";
+@import 'contact.css';
+@import 'footer.css';
+
+/* ==========================================================================
+   Header & Navigation
+   ========================================================================== */
+
+.site-header {
+  padding-block: var(--space-s);
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background: transparent;
+  border-bottom: none;
+  z-index: 1000;
+  transition: background-color 0.3s ease, box-shadow 0.3s ease;
+  
+  /* Ensure full width */
+  padding-inline: var(--space-m);
+}
+
+.site-header.scrolled {
+  background-color: var(--color-white);
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  padding-block: var(--space-2xs);
+}
+
+/* Header Grid Layout */
+.header-grid {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  max-width: 100%; /* Override any container limits if present */
+}
+
+@media (min-width: 64rem) {
+  .header-grid {
+    display: grid;
+    /* 
+       Col 1: Flexible space + Logo 
+       Col 2: Content Container Width (For alignment)
+       Col 3: Flexible space + Actions
+    */
+    grid-template-columns: 1fr minmax(auto, var(--max-width)) 1fr;
+    gap: var(--space-s);
+    justify-items: start;
+  }
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  gap: var(--space-2xs);
+  font-size: var(--step-1);
+  font-weight: 700;
+  text-decoration: none;
+  color: var(--color-gray-900);
+  
+  /* Grid Position */
+  grid-column: 1;
+  justify-self: start;
+}
+
+.logo img {
+  height: 2rem;
+  width: auto;
+}
+
+.nav-main {
+  display: none;
+}
+
+@media (min-width: 64rem) {
+  .nav-main {
+    display: flex;
+    align-items: center;
+    gap: var(--space-m);
+    
+    /* Grid Position - Text Align with content */
+    grid-column: 2;
+    width: 100%;
+    padding-left: var(--space-m); /* Match container padding */
+  }
+}
+
+.nav-main a {
+  font-size: var(--step--2);
+  font-weight: 400; /* Normal weight */
+  text-transform: uppercase;
+  text-decoration: none;
+  color: var(--color-gray-900);
+  transition: color var(--transition-fast);
+  letter-spacing: 0.05em;
+}
+
+.nav-main a:hover,
+.nav-main a[aria-current="page"] {
+  color: var(--color-primary);
+}
+
+.nav-actions {
+  display: flex;
+  align-items: center;
+  gap: var(--space-l);
+  
+  /* Grid Position */
+  grid-column: 3;
+  justify-self: end;
+}
+
+/* Header Social (New) */
+.header-social {
+  display: none;
+}
+
+@media (min-width: 64rem) {
+  .header-social {
+    display: flex;
+    align-items: center;
+    gap: var(--space-m);
+  }
+  
+  .header-social a {
+    color: var(--color-gray-900);
+    display: flex;
+    align-items: center;
+    transition: color var(--transition-fast);
+  }
+  
+  .header-social a:hover {
+    color: var(--color-primary);
+  }
+}
+
+/* Language Toggle */
+.lang-toggle {
+  display: flex;
+  align-items: center;
+  gap: var(--space-3xs);
+  font-size: var(--step--1);
+}
+
+.lang-toggle a {
+  padding: var(--space-3xs) var(--space-2xs);
+  text-decoration: none;
+  color: var(--color-gray-600);
+  border-radius: var(--border-radius-sm);
+  transition: all var(--transition-fast);
+}
+
+.lang-toggle a:hover {
+  color: var(--color-gray-900);
+  background: var(--color-gray-100);
+}
+
+.lang-toggle a[aria-current="true"] {
+  color: var(--color-white);
+  background: var(--color-gray-900);
+}
+
+@media (min-width: 64rem) {
+  /* Hide Lang Toggle on Desktop */
+  .lang-toggle {
+    display: none;
+  }
+}
+
+/* Mobile Menu Toggle */
+.menu-toggle {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  padding: var(--space-2xs);
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+@media (min-width: 64rem) {
+  .menu-toggle {
+    display: none;
+  }
+}
+
+.menu-toggle span {
+  display: block;
+  width: 24px;
+  height: 2px;
+  background: var(--color-gray-900);
+  transition: all var(--transition-fast);
+}
+
+/* ==========================================================================
+   Hero/Masthead Section
+   ========================================================================== */
+
+.masthead {
+  position: relative;
+  min-height: 100vh;
+  /* Use local asset or fallback */
+  background-image: url('/assets/img/bg/personal.png');
+  background-size: cover;
+  background-position: center top;
+  display: flex;
+  align-items: center;
+  overflow: hidden;
+  padding-top: 8rem; /* Space for header */
+}
+
+/* Texture Lines Grid */
+.lines {
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  z-index: 0;
+}
+
+.lines-container {
+  max-width: var(--max-width);
+  margin-inline: auto;
+  height: 100%;
+  display: grid;
+  grid-template-columns: 1fr; /* Default to 1 col for mobile */
+  padding-inline: var(--space-m);
+}
+
+@media (min-width: 48rem) {
+  .lines-container {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (min-width: 64rem) {
+  .lines-container {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+/* Vertical lines logic */
+.line-col {
+  height: 100%;
+  border-left: 1px solid rgba(0, 0, 0, 0.07);
+}
+
+/* Add right border to the last visible column per breakpoint logic if needed, 
+   but original only had 'before' and 'after' on divs. 
+   We will just add left borders to all, and maybe a right border to the very last one.
+*/
+.line-col:last-child {
+  border-right: 1px solid rgba(0, 0, 0, 0.07);
+}
+
+
+/* Hero Content Positioning */
+.hero-container {
+  position: relative;
+  z-index: 1;
+  width: 100%;
+}
+
+.hero-content {
+  /* Match the grid: Col 1 on Large screens */
+  background: rgba(255, 255, 255, 0.9);
+  backdrop-filter: blur(10px);
+  padding: var(--space-l);
+  max-width: 35rem; /* constrained width */
+}
+
+@media (min-width: 64rem) {
+  /* Align to the first column of the 3-col grid */
+  .hero-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: var(--space-m); /* Match grid gap if any, though lines don't use gap */
+  }
+  
+  .hero-content {
+    grid-column: 1 / 2;
+    background: transparent; /* Remove bg on large if intended to be transparent over image */
+    backdrop-filter: none;
+    padding: 0;
+  }
+  
+  /* Add the white box styling from original 'opener' if visible */
+  .opener-box {
+    background: linear-gradient(180deg, #FFFFFF 0%, rgba(255, 255, 255, 0) 100%);
+    padding: var(--space-m);
+  }
+}
+
+.hero-greeting {
+  display: block;
+  font-size: var(--step-2);
+  color: var(--color-primary);
+  margin-bottom: var(--space-2xs);
+  font-weight: 700;
+}
+
+.hero-name {
+  font-size: var(--step-5);
+  line-height: 1;
+  margin-bottom: var(--space-s);
+}
+
+.hero-role {
+  font-size: var(--step-1);
+  color: var(--color-gray-700);
+  margin-bottom: var(--space-m);
+}
+
+.text-primary {
+  color: var(--color-primary);
+}
+
+/* ==========================================================================
+   Footer
+   ========================================================================== */
+/* Styles moved to src/assets/css/footer.css */
+
+/* ==========================================================================
+   About Section
+   ========================================================================== */
+
+.about-section {
+  padding-block: var(--space-2xl);
+  overflow: hidden;
+}
+
+.about-grid {
+  display: grid;
+  gap: var(--space-l);
+}
+
+@media (min-width: 64rem) {
+  .about-grid {
+    grid-template-columns: repeat(12, 1fr);
+    align-items: center;
+    row-gap: var(--space-2xl); /* Space between row 1 (features) and row 2 (list) */
+  }
+
+  /* Text Column: Offset 4, span 4 (Col 5-9) */
+  .about-intro {
+    grid-column: 5 / 9;
+    grid-row: 1;
+  }
+
+  /* Image Column: Span 4 (Col 9-13) */
+  .about-image-wrapper {
+    grid-column: 9 / 13;
+    grid-row: 1;
+  }
+
+  /* List Column: Span 4 (Col 1-5) -> Replicating 'col-lg-4' (no offset) on new row */
+  .about-skills {
+    grid-column: 1 / 5;
+    grid-row: 2;
+  }
+}
+
+.about-heading {
+  font-size: var(--step-3);
+  line-height: 1.2;
+  margin-bottom: var(--space-m);
+  font-weight: 700;
+}
+
+.about-image {
+  width: 100%;
+  height: auto;
+  display: block;
+  /* Optional: filter, border radius from original design? 
+     Original had 'data-aos="blur"'
+  */
+}
+
+/* Skills List */
+.skills-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.skills-list li {
+  margin-bottom: 0;
+}
+
+.skills-list a {
+  display: flex;
+  align-items: baseline;
+  text-decoration: none;
+  color: var(--color-gray-900);
+  font-size: var(--step-0);
+  padding-block: 0;
+  border-bottom: 1px solid transparent;
+  transition: all var(--transition-fast);
+}
+
+.skills-list a:hover {
+  color: var(--color-primary);
+  border-bottom-color: var(--color-gray-200);
+}
+
+.skill-number {
+  font-family: var(--font-mono); /* Use monospace if available or fall back */
+  color: var(--color-gray-400);
+  margin-right: var(--space-m);
+  font-size: var(--step--1);
+  min-width: 2rem;
+}
+
+.skill-name {
+  font-weight: 500;
+}
+
+/* ==========================================================================
+   Expertise Section
+   ========================================================================== */
+
+.expertise-section {
+  padding-block: var(--space-2xl);
+  overflow: hidden;
+}
+
+.expertise-grid-layout {
+  display: grid;
+  gap: var(--space-l);
+}
+
+@media (min-width: 64rem) {
+  .expertise-grid-layout {
+    grid-template-columns: repeat(12, 1fr);
+    align-items: center;
+  }
+
+  /* Heading Column: Col 1-5 (Order 1) */
+  .expertise-heading-col {
+    grid-column: 1 / 5;
+    grid-row: 1;
+    z-index: 2; /* Overlap image slightly if needed */
+  }
+
+  /* Image Column: Col 4-9 (Order 2) - Centered/Overlapped */
+  .expertise-image-col {
+    grid-column: 5 / 9;
+    grid-row: 1;
+  }
+
+  /* Text Column: Col 9-13 (Order 3) */
+  .expertise-text-col {
+    grid-column: 9 / 13;
+    grid-row: 1;
+  }
+}
+
+.expertise-heading {
+  font-size: var(--step-3);
+  line-height: 1.2;
+  margin-bottom: var(--space-m);
+  font-weight: 700;
+  text-align: right; /* Aligned right to face image */
+}
+
+@media (max-width: 63.9rem) {
+  .expertise-heading {
+    text-align: left;
+  }
+}
+
+.expertise-image {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+/* Capabilities Visual List */
+.expertise-capabilities {
+  margin-top: var(--space-2xl);
+}
+
+.capabilities-grid {
+  display: grid;
+  gap: var(--space-l);
+}
+
+@media (min-width: 48rem) {
+  .capabilities-grid {
+    grid-template-columns: repeat(2, 1fr); /* 2 Columns for better readability of long text */
+  }
+}
+
+@media (min-width: 64rem) {
+  .capabilities-grid {
+    grid-template-columns: repeat(4, 1fr); /* 4 Columns on large screens */
+  }
+}
+
+.capability-item {
+  margin-bottom: var(--space-s);
+}
+
+.capability-label {
+  display: flex;
+  margin-bottom: var(--space-2xs);
+  font-weight: 700;
+  font-size: var(--step--1);
+  text-transform: uppercase;
+  color: var(--color-gray-900);
+  letter-spacing: 0.05em;
+}
+
+/* Decorative Line styling */
+.capability-line {
+  height: 4px;
+  background-color: var(--color-primary);
+  width: 100%;
+  position: relative;
+  border-radius: 2px;
+  opacity: 0.8;
+}

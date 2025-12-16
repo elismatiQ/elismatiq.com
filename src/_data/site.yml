@@ -1,0 +1,20 @@
+title: "David Elisma | Growth Engineer"
+description: "I architect sovereign, model-agnostic AI platforms for the Government of Canada."
+author: "David Elisma"
+url: "https://www.elismatiq.com"
+email: "info@elismatiq.com"
+phone: "(613) 793-5690"
+address: "Ottawa, Ontario, Canada"
+
+social:
+  linkedin: "https://www.linkedin.com/in/elismatiq"
+  twitter: "https://x.com/elismatiQ"
+  github: "https://github.com/elismatiQ"
+
+seo:
+  defaultImage: "/assets/img/og-image.jpg"
+  twitterHandle: "@elismatiQ"
+
+procurement:
+  status: "Currently working at the Canadian Federal Government"
+  dataResidency: "Content hosted in Canada via Netlify"

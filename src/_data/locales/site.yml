@@ -1,0 +1,244 @@
+# Common strings for the site [en/fr]
+
+# Language
+lang:
+  en: "en"
+  fr: "fr"
+langLabel:
+  en: "English"
+  fr: "Français"
+langAlt:
+  en: "fr"
+  fr: "en"
+langAltLabel:
+  en: "Français"
+  fr: "English"
+langAltUrl:
+  en: "/fr/"
+  fr: "/en/"
+
+# Navigation
+skipToContent:
+  en: "Skip to main content"
+  fr: "Passer au contenu principal"
+menu:
+  en: "Menu"
+  fr: "Menu"
+close:
+  en: "Close"
+  fr: "Fermer"
+
+# Common
+readMore:
+  en: "Read more"
+  fr: "Lire la suite"
+allArticles:
+  en: "All articles"
+  fr: "Tous les articles"
+backToHome:
+  en: "Back to home"
+  fr: "Retour à l'accueil"
+shareOn:
+  en: "Share on"
+  fr: "Partager sur"
+publishedOn:
+  en: "Published on"
+  fr: "Publié le"
+writtenBy:
+  en: "Written by"
+  fr: "Écrit par"
+
+# Hero
+greeting:
+  en: "Hello,"
+  fr: "Bonjour,"
+iam:
+  en: "I'm"
+  fr: "je suis"
+role:
+  en: "Growth Engineer"
+  fr: "Ingénieur de croissance"
+tagline:
+  en: "I architect sovereign, model-agnostic AI platforms for the Government of Canada."
+  fr: "J'architecte des plateformes d'IA souveraines et agnostiques pour le gouvernement du Canada."
+
+# About
+aboutTitle:
+  en: "About"
+  fr: "À propos"
+aboutHeading:
+  en: "Empowering <span class='text-primary'>Digital Transformation</span> with a blend of system design and automation"
+  fr: "Habiliter la <span class='text-primary'>transformation numérique</span> grâce à un mélange de design de système et d'automatisation"
+aboutList:
+  en:
+    - "Sovereign AI Architecture"
+    - "Context Engineering (RAG)"
+    - "WCAG 2.2 Compliance"
+    - "System Architecture"
+    - "Digital Modernization"
+  fr:
+    - "Architecture IA souveraine"
+    - "Ingénierie de contexte (RAG)"
+    - "Conformité WCAG 2.2"
+    - "Architecture de système"
+    - "Modernisation numérique"
+expertiseTitle:
+  en: "Expertise"
+  fr: "Expertise"
+expertiseHeading:
+  en: "Architecting <span class='text-primary'>Sovereign Digital Platforms</span> for the AI Era"
+  fr: "Architecturer des <span class='text-primary'>plateformes numériques souveraines</span> pour l'ère de l'IA"
+expertiseText:
+  en: "I bridge the gap between complex AI architectures, design systems, and business strategy. My focus is on building sovereign, accessible, and secure digital ecosystems that drive modernization, growth, and public trust."
+  fr: "Je comble le fossé entre les architectures d'IA complexes, les systèmes de design et la stratégie d'affaires. Je me concentre sur la création d'écosystèmes numériques souverains, accessibles et sécurisés qui favorisent la modernisation, la croissance et la confiance du public."
+expertiseList:
+  en:
+    - name: "Sovereign AI & RAG Architecture"
+    - name: "Enterprise Design Systems"
+    - name: "Growth Engineering"
+    - name: "Inclusive Design (WCAG 2.2 AA)"
+  fr:
+    - name: "Architecture IA Souveraine & RAG"
+    - name: "Systèmes de Design d'Entreprise"
+    - name: "Ingénierie de Croissance"
+    - name: "Design Inclusif (WCAG 2.2 AA)"
+experienceHeading:
+  en: "Experience"
+  fr: "Expérience"
+experienceList:
+  en:
+    - year: "2023 - Present"
+      role: "Front-End Architect & Developer Advocate"
+      company: "Canadian Digital Service (CDS) / ESDC"
+      description: "Lead Architect for AI-Answers and the GC Design System. Bridging the gap between technical teams and policy requirements."
+      logo: "cds-logo.png"
+    - year: "2019 - 2023"
+      role: "Front-End Architect, Canada.ca Design System"
+      company: "Treasury Board of Canada Secretariat (DTO)"
+      description: "Technical lead for the Canada.ca Design System. Spearheaded the move to Jamstack and Design Tokens."
+      logo: "goc-logo.png"
+    - year: "2010 - 2019"
+      role: "Senior Web Publisher & Developer"
+      company: "Innovation, Science and Economic Development Canada"
+      description: "Managed the end-to-end lifecycle of the department's web presence. Led digital modernization and ROT reduction."
+      logo: "goc-logo.png"
+  fr:
+    - year: "2023 - Présent"
+      role: "Architecte Front-End & Avocat des Développeurs"
+      company: "Service Numérique Canadien (SNC) / EDSC"
+      description: "Architecte principal pour AI-Réponses et le système de design du GC. Faire le pont entre les équipes techniques et les exigences politiques."
+      logo: "cds-logo.png"
+    - year: "2019 - 2023"
+      role: "Architecte Front-End, Système de Design Canada.ca"
+      company: "Secrétariat du Conseil du Trésor du Canada (BTN)"
+      description: "Responsable technique du système de design Canada.ca. A dirigé la transition vers Jamstack et les jetons de design."
+      logo: "goc-logo.png"
+    - year: "2010 - 2019"
+      role: "Éditeur Web Senior & Développeur"
+      company: "Innovation, Sciences et Développement économique Canada"
+      description: "Gestion du cycle de vie complet de la présence web du ministère. A dirigé la modernisation numérique et la réduction des contenus désuets."
+      logo: "goc-logo.png"
+
+# Contact
+contactTitle:
+  en: "Contact"
+  fr: "Contact"
+contactCta:
+  en: "Let's collaborate"
+  fr: "Collaborons ensemble"
+nameLabel:
+  en: "Name"
+  fr: "Nom"
+emailLabel:
+  en: "Email"
+  fr: "Courriel"
+messageLabel:
+  en: "Message"
+  fr: "Message"
+sendButton:
+  en: "Send message"
+  fr: "Envoyer le message"
+formSuccess:
+  en: "Message sent successfully!"
+  fr: "Message envoyé avec succès!"
+formError:
+  en: "Something went wrong. Please try again."
+  fr: "Une erreur s'est produite. Veuillez réessayer."
+contactDescription:
+  en: "I'm always open to discussing new projects, creative ideas or opportunities to be part of your visions."
+  fr: "Je suis toujours ouvert à discuter de nouveaux projets, d'idées créatives ou d'opportunités de faire partie de vos visions."
+contactAddress:
+  en: "Ottawa, Ontario, Canada"
+  fr: "Ottawa, Ontario, Canada"
+contactEmail:
+  en: "info@elismatiq.com"
+  fr: "info@elismatiq.com"
+contactFormHeading:
+  en: "Let's collaborate to innovate and secure the <span class='text-primary'>digital future.</span>"
+  fr: "Collaborons pour innover et sécuriser l'<span class='text-primary'>avenir numérique.</span>"
+contactBtn:
+  en: "Contact me"
+  fr: "Contactez-moi"
+
+# Footer
+copyright:
+  en: "All Rights Reserved"
+  fr: "Tous droits réservés"
+dataResidency:
+  en: "Content hosted in Canada"
+  fr: "Contenu hébergé au Canada"
+procurement:
+  en: "Ready to work with Federal Government"
+  fr: "Prêt à travailler avec le gouvernement fédéral"
+footerPersonal:
+  en: "Personal"
+  fr: "Personnel"
+footerAddressLabel:
+  en: "Address:"
+  fr: "Adresse:"
+footerEmailLabel:
+  en: "Email:"
+  fr: "Courriel:"
+footerMenuLabel:
+  en: "Menu:"
+  fr: "Menu:"
+footerSubscribeLabel:
+  en: "Subscribe:"
+  fr: "S'abonner:"
+newsletterText:
+  en: "Subscribe to our newsletter and we will inform you about newest projects and promotions."
+  fr: "Abonnez-vous à notre infolettre et nous vous informerons des nouveaux projets et promotions."
+subscribeBtn:
+  en: "Go"
+  fr: "Go"
+
+# Blog
+blogTitle:
+  en: "Blog"
+  fr: "Blogue"
+recentPosts:
+  en: "Recent posts"
+  fr: "Articles récents"
+categories:
+  en: "Categories"
+  fr: "Catégories"
+technology:
+  en: "Technology"
+  fr: "Technologie"
+governance:
+  en: "Governance"
+  fr: "Gouvernance"
+education:
+  en: "Education"
+  fr: "Éducation"
+
+# Projects
+projectsTitle:
+  en: "Projects"
+  fr: "Projets"
+viewProject:
+  en: "View project"
+  fr: "Voir le projet"
+caseStudy:
+  en: "Case study"
+  fr: "Étude de cas"

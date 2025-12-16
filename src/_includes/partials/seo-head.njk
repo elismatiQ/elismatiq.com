@@ -1,0 +1,79 @@
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<!-- Primary Meta Tags -->
+<title>{{ title | default(site.title) }}</title>
+<meta name="title" content="{{ title | default(site.title) }}">
+<meta name="description" content="{{ description | default(site.description) }}">
+<meta name="author" content="{{ site.author }}">
+
+<!-- Canonical URL -->
+<link rel="canonical" href="{{ site.url }}{{ page.url }}">
+
+<!-- hreflang for bilingual -->
+{% if lang == 'en' %}
+<link rel="alternate" hreflang="en" href="{{ site.url }}{{ page.url }}">
+<link rel="alternate" hreflang="fr" href="{{ site.url }}{{ page.url | replace('/en/', '/fr/') | replace('/about/', '/a-propos/') | replace('/projects/', '/projets/') | replace('/blog/', '/blogue/') }}">
+{% elif lang == 'fr' %}
+<link rel="alternate" hreflang="fr" href="{{ site.url }}{{ page.url }}">
+<link rel="alternate" hreflang="en" href="{{ site.url }}{{ page.url | replace('/fr/', '/en/') | replace('/a-propos/', '/about/') | replace('/projets/', '/projects/') | replace('/blogue/', '/blog/') }}">
+{% endif %}
+<link rel="alternate" hreflang="x-default" href="{{ site.url }}/en/">
+
+<!-- Open Graph / Facebook -->
+<meta property="og:type" content="{% if layout == 'post.njk' %}article{% else %}website{% endif %}">
+<meta property="og:url" content="{{ site.url }}{{ page.url }}">
+<meta property="og:title" content="{{ title | default(site.title) }}">
+<meta property="og:description" content="{{ description | default(site.description) }}">
+<meta property="og:image" content="{{ ogImage | default(site.url + site.seo.defaultImage) }}">
+<meta property="og:locale" content="{{ lang | default('en') }}_CA">
+
+<!-- Twitter -->
+<meta property="twitter:card" content="summary_large_image">
+<meta property="twitter:url" content="{{ site.url }}{{ page.url }}">
+<meta property="twitter:title" content="{{ title | default(site.title) }}">
+<meta property="twitter:description" content="{{ description | default(site.description) }}">
+<meta property="twitter:image" content="{{ ogImage | default(site.url + site.seo.defaultImage) }}">
+<meta property="twitter:site" content="{{ site.seo.twitterHandle }}">
+
+<!-- JSON-LD Structured Data -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "{% if layout == 'post.njk' %}Article{% else %}Person{% endif %}",
+  {% if layout == 'post.njk' %}
+  "headline": "{{ title }}",
+  "datePublished": "{{ date }}",
+  "author": {
+    "@type": "Person",
+    "name": "{{ site.author }}",
+    "url": "{{ site.url }}"
+  },
+  "publisher": {
+    "@type": "Person",
+    "name": "{{ site.author }}"
+  }
+  {% else %}
+  "name": "{{ site.author }}",
+  "url": "{{ site.url }}",
+  "jobTitle": "Growth Engineer",
+  "worksFor": {
+    "@type": "Organization",
+    "name": "Government of Canada"
+  },
+  "description": "{{ site.description }}",
+  "sameAs": [
+    "{{ site.social.linkedin }}",
+    "{{ site.social.twitter }}",
+    "{{ site.social.github }}"
+  ],
+  "knowsAbout": [
+    "AI Architecture",
+    "RAG Systems",
+    "Government Digital Transformation",
+    "WCAG Accessibility",
+    "Design Systems"
+  ]
+  {% endif %}
+}
+</script>

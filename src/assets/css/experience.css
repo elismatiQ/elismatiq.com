@@ -1,0 +1,88 @@
+/* Experience Section */
+.experience-list {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-2xl);
+  position: relative;
+  border-left: 2px solid var(--color-gray-200);
+  padding-left: var(--space-l);
+  margin-top: var(--space-xl);
+}
+
+.experience-item {
+  position: relative;
+}
+
+/* Dot on the timeline */
+.experience-item::before {
+  content: '';
+  position: absolute;
+  left: calc(-1 * var(--space-l) - 7px); /* Start of padding + half line width + centering */
+  top: 6px;
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  background-color: var(--color-primary);
+  border: 2px solid var(--color-bg);
+  box-shadow: 0 0 0 4px var(--color-bg); /* Mask the line behind lightly */
+}
+
+.experience-year {
+  font-size: var(--step--2);
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  color: var(--color-primary);
+  margin-bottom: var(--space-xs);
+  display: block;
+}
+
+.experience-header {
+  display: flex;
+  align-items: flex-start;
+  gap: var(--space-m);
+  margin-bottom: var(--space-s);
+}
+
+.experience-logo {
+  width: 40px;
+  height: auto;
+  flex-shrink: 0;
+  margin-top: 4px;
+}
+
+.experience-details {
+  flex-grow: 1;
+}
+
+.experience-role {
+  font-size: var(--step-1);
+  line-height: 1.2;
+  margin: 0;
+  color: var(--color-text);
+}
+
+.experience-company {
+  font-size: var(--step--1);
+  font-weight: 400;
+  color: var(--color-gray-600);
+  margin: var(--space-2xs) 0 0 0;
+}
+
+.experience-desc {
+  color: var(--color-gray-700);
+  font-size: var(--step-0);
+  line-height: 1.6;
+  max-width: 60ch;
+  margin: 0;
+}
+
+@media (min-width: 48rem) {
+  .experience-list {
+    padding-left: var(--space-xl);
+  }
+  
+  .experience-item::before {
+    left: calc(-1 * var(--space-xl) - 7px);
+  }
+}
