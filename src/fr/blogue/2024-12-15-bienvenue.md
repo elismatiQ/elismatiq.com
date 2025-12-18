@@ -4,6 +4,7 @@ title: "Bienvenue sur mon blogue"
 description: "Une introduction à mon nouveau site web et aux sujets que je couvrirai en tant qu'ingénieur de croissance."
 date: 2024-12-15
 category: technology
+translationKey: welcome
 ---
 
 Bienvenue sur mon nouveau site web! En tant qu'**ingénieur de croissance** travaillant avec le gouvernement du Canada, je partagerai des perspectives sur:

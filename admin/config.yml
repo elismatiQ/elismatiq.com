@@ -71,6 +71,7 @@ collections:
           - { label: "Technology", value: "technology" }
           - { label: "Governance", value: "governance" }
           - { label: "Education", value: "education" }
+      - { label: "Translation Key", name: "translationKey", widget: "string", required: false, hint: "Use the same key for English and French versions of the same post to link them." }
       - {
           label: "Featured Image",
           name: "ogImage",
@@ -108,6 +109,7 @@ collections:
           - { label: "Technologie", value: "technology" }
           - { label: "Gouvernance", value: "governance" }
           - { label: "Éducation", value: "education" }
+      - { label: "Clé de traduction", name: "translationKey", widget: "string", required: false, hint: "Utilisez la même clé pour les versions anglaise et française du même article pour les lier." }
       - {
           label: "Image vedette",
           name: "ogImage",
