@@ -36,10 +36,6 @@ site_url: https://www.elismatiq.com
 
 # Locale support
 locale: "en"
-i18n:
-  structure: multiple_folders
-  locales: [en, fr]
-  default_locale: en
 
 collections:
   # English Blog

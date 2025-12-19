@@ -14,10 +14,6 @@
     <meta name="application-name" content="elismatiQ">
     <meta name="msapplication-TileColor" content="#fdfcfc">
     <meta name="theme-color" content="#fdfcfc">
-  </head>
-  <body>
-    <!-- Include the script that builds the page and powers Decap CMS -->
-    <script src="https://unpkg.com/decap-cms@^3.0.0/dist/decap-cms.js"></script>
     <!-- Inject custom styles for the Login Page Logo -->
     <style>
       /* Target the logo by its source URL since classes are dynamic */
@@ -28,5 +24,12 @@
         margin-bottom: 20px !important;
       }
     </style>
+  </head>
+  <body>
+    <!-- Include the script that builds the page and powers Decap CMS -->
+    <script src="https://unpkg.com/decap-cms@^3.0.0/dist/decap-cms.js"></script>
+    <script>
+      CMS.registerPreviewStyle("/assets/css/main.css");
+    </script>
   </body>
 </html>
