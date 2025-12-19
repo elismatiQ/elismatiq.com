@@ -56,8 +56,8 @@ iam:
   en: "I'm"
   fr: "je suis"
 role:
-  en: "Growth Engineer"
-  fr: "Ingénieur de croissance"
+  en: "Senior technical system advisor"
+  fr: "Conseiller technique principal en systèmes"
 tagline:
   en: "I architect sovereign, model-agnostic AI platforms for the Government of Canada."
   fr: "J'architecte des plateformes d'IA souveraines et agnostiques pour le gouvernement du Canada."
@@ -110,7 +110,7 @@ experienceList:
     - year: "2023 - Present"
       role: "Front-End Architect & Developer Advocate"
       company: "Canadian Digital Service (CDS) / ESDC"
-      description: "Lead Architect for AI-Answers and the GC Design System. Bridging the gap between technical teams and policy requirements."
+      description: "Front-end Architect for AI-Answers and the GC Design System. Bridging the gap between technical teams and policy requirements."
       logo: "cds-logo.png"
     - year: "2019 - 2023"
       role: "Front-End Architect, Canada.ca Design System"
@@ -126,7 +126,7 @@ experienceList:
     - year: "2023 - Présent"
       role: "Architecte Front-End & Avocat des Développeurs"
       company: "Service Numérique Canadien (SNC) / EDSC"
-      description: "Architecte principal pour AI-Réponses et le système de design du GC. Faire le pont entre les équipes techniques et les exigences politiques."
+      description: "Architecte \"front-end\" pour AI-Réponses et le système de design du GC. Faire le pont entre les équipes techniques et les exigences politiques."
       logo: "cds-logo.png"
     - year: "2019 - 2023"
       role: "Architecte Front-End, Système de Design Canada.ca"

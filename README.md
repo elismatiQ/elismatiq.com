@@ -3,7 +3,7 @@
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
 [![Contributor Covenant](https://img.shields.io/badge/Contributor%20Covenant-3.0-4baaaa.svg)](CODE_OF_CONDUCT.md)
 [![Built with Eleventy](https://img.shields.io/badge/Built%20with-Eleventy-red.svg)](https://www.11ty.dev/)
-[![Netlify Status](https://api.netlify.com/api/v1/badges/165e9007-a2b8-4c01-9ada-74a22956864c/deploy-status)](https://app.netlify.com/sites/elismatiq/deploys)
+[![Netlify Status](https://api.netlify.com/api/v1/badges/3fdcf52d-a4fc-477c-9550-7f3147f04109/deploy-status)](https://app.netlify.com/projects/elismatiq/deploys)
 
 *[Français ci-dessous](#français)*
 

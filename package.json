@@ -1,7 +1,7 @@
 {
   "name": "elismatiq-website",
   "version": "1.0.0",
-  "description": "Growth Engineer portfolio - David Elisma",
+  "description": "Senior technical system advisor portfolio - David Elisma",
   "main": ".eleventy.js",
   "scripts": {
     "dev": "eleventy --serve --port=4749",
@@ -9,7 +9,7 @@
     "clean": "rm -rf _site"
   },
   "keywords": [
-    "growth-engineer",
+    "senior-technical-system-advisor",
     "government",
     "ai",
     "11ty",
