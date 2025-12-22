@@ -334,7 +334,7 @@
    ========================================================================== */
 
 .about-section {
-  padding-block: var(--space-2xl);
+  padding-block: var(--space-l); /* Reduced from 2xl */
   overflow: hidden;
 }
 
@@ -502,7 +502,7 @@
 
 @media (min-width: 64rem) {
   .capabilities-grid {
-    grid-template-columns: repeat(4, 1fr); /* 4 Columns on large screens */
+    grid-template-columns: repeat(3, 1fr); /* Changed from 4 to 3 Columns */
   }
 }
 
@@ -512,6 +512,8 @@
 
 .capability-label {
   display: flex;
+  align-items: flex-end; /* Align text to bottom */
+  min-height: 3rem; /* Ensure lines stay at same level even with multi-line labels */
   margin-bottom: var(--space-2xs);
   font-weight: 700;
   font-size: var(--step--1);

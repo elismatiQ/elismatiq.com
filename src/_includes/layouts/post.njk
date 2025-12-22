@@ -4,19 +4,26 @@ layout: base.njk
 <article class="post">
   <header class="post-header section">
     <div class="container">
+      <h1>{{ title }}</h1>
       <p class="post-meta">
         <time datetime="{{ date | dateFormat }}">
           {% if lang == 'fr' %}
-            {{ date | dateFormatFr }}
+          {{ date | dateFormatFr }}
           {% else %}
-            {{ date | dateFormat }}
+          {{ date | dateFormat }}
           {% endif %}
         </time>
         {% if category %}
-        <span class="post-category">{{ category }}</span>
+        <span class="post-category">/ {{ category }}</span>
         {% endif %}
       </p>
-      <h1>{{ title }}</h1>
+
+      {% if ogImage %}
+      <div class="post-featured-image">
+        <img src="{{ ogImage }}" alt="{{ title }}" loading="eager">
+      </div>
+      {% endif %}
+
       {% if description %}
       <p class="post-description">{{ description }}</p>
       {% endif %}

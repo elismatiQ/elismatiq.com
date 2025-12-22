@@ -1,9 +1,9 @@
 ---
-layout: post.njk
-title: "Bienvenue sur mon blogue"
-description: "Une introduction à mon nouveau site web et aux sujets que je couvrirai en tant que conseiller technique principal en systèmes."
-date: 2024-12-15
 category: technology
+description: "Une introduction à mon nouveau site web et aux sujets que je couvrirai en tant que conseiller technique principal en systèmes."
+date: 2024-09-16
+ogImage: /assets/img/blog/2024-09-16-bienvenue.png
+title: "Bienvenue sur mon blogue"
 translationKey: welcome
 ---
 

@@ -20,7 +20,7 @@
 .blog-row-image-wrapper {
   width: 100%;
   overflow: hidden;
-  box-shadow: 0 10px 30px rgba(0,0,0,0.05);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
 }
 
 .blog-row-image {
@@ -148,3 +148,25 @@
     grid-row: 1;
   }
 }
+
+/* Post Page Styles */
+.post-featured-image {
+  margin-bottom: var(--space-l);
+  border-radius: var(--border-radius-lg);
+  overflow: hidden;
+  box-shadow: var(--shadow-md);
+}
+
+.post-featured-image img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.post-description {
+  font-size: var(--step-1);
+  color: var(--color-gray-600);
+  line-height: var(--leading-tight);
+  margin-top: var(--space-m);
+}
+
