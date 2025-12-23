@@ -10,7 +10,6 @@ module.exports = function (eleventyConfig) {
   // Passthrough copy for static assets
   eleventyConfig.addPassthroughCopy("src/assets");
   eleventyConfig.addPassthroughCopy({ "public": "/" });
-  eleventyConfig.addPassthroughCopy({ "admin": "admin" });
 
   // Date filters
   eleventyConfig.addFilter("date", (dateObj, format = "LLLL d, yyyy", locale = "en") => {

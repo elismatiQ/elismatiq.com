@@ -36,12 +36,11 @@
       <!-- Language Toggle -->
       <div class="lang-toggle" role="navigation" aria-label="Language selection">
         {% if lang == 'en' %}
-        <!-- Active language style handled by CSS -->
-        <a href="{{ page.url | replace('/fr/', '/en/') | replace('/a-propos/', '/about/') }}" class="active-lang">EN</a>
-        <a href="{{ page.url | replace('/en/', '/fr/') | replace('/about/', '/a-propos/') }}">FR</a>
+        <a href="{{ page.url | replace('/fr/', '/en/') | replace('/blogue/', '/blog/') }}" class="active-lang">EN</a>
+        <a href="{{ page.url | replace('/en/', '/fr/') | replace('/blog/', '/blogue/') }}">FR</a>
         {% else %}
-        <a href="{{ page.url | replace('/fr/', '/en/') | replace('/a-propos/', '/about/') }}">EN</a>
-        <a href="{{ page.url | replace('/en/', '/fr/') | replace('/a-propos/', '/about/') }}" class="active-lang">FR</a>
+        <a href="{{ page.url | replace('/fr/', '/en/') | replace('/blogue/', '/blog/') }}">EN</a>
+        <a href="{{ page.url | replace('/en/', '/fr/') | replace('/blog/', '/blogue/') }}" class="active-lang">FR</a>
         {% endif %}
       </div>
       

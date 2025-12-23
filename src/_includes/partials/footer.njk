@@ -84,10 +84,10 @@
       <div class="footer-bottom-col-3">
         <ul class="language-toggle">
           <li class="{% if lang == 'en' %}active{% endif %}">
-            <a href="{{ page.url | replace('/fr/', '/en/') }}">ENG</a>
+            <a href="{{ page.url | replace('/fr/', '/en/') | replace('/blogue/', '/blog/') | replace('/a-propos/', '/about/') }}">ENG</a>
           </li>
           <li class="{% if lang == 'fr' %}active{% endif %}">
-            <a href="{{ page.url | replace('/en/', '/fr/') }}">FRA</a>
+            <a href="{{ page.url | replace('/en/', '/fr/') | replace('/blog/', '/blogue/') | replace('/about/', '/a-propos/') }}">FRA</a>
           </li>
         </ul>
       </div>

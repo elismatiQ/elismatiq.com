@@ -13,7 +13,7 @@ translationKey: blog-index
     </div>
 
     <div class="blog-zig-zag">
-      {% for post in collections.blogFr | reverse %}
+      {% for post in collections.blogFr %}
          {% set isEven = loop.index % 2 == 0 %}
          <div class="blog-row {{ 'even' if isEven else 'odd' }}">
            

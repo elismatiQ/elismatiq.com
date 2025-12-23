@@ -5,7 +5,7 @@
 [![Built with Eleventy](https://img.shields.io/badge/Built%20with-Eleventy-red.svg)](https://www.11ty.dev/)
 [![Netlify Status](https://api.netlify.com/api/v1/badges/3fdcf52d-a4fc-477c-9550-7f3147f04109/deploy-status)](https://app.netlify.com/projects/elismatiq/deploys)
 
-*[Français ci-dessous](#français)*
+_[Français ci-dessous](#français)_
 
 This is the source code for the personal portfolio website of **David Elisma**.
 
@@ -15,7 +15,7 @@ The site is built with [Eleventy](https://www.11ty.dev/), a simpler static site 
 
 - **Static Site Generator:** [Eleventy (11ty) v3](https://www.11ty.dev/)
 - **Templating:** Nunjucks (`.njk`), Markdown (`.md`)
-- **CMS:** Decap CMS
+- **CMS:** None (Static site)
 - **Deployment:** Netlify
 
 ## 🛠️ Features
@@ -32,7 +32,6 @@ The site is built with [Eleventy](https://www.11ty.dev/), a simpler static site 
 ├── .eleventy.js        # Eleventy configuration
 ├── package.json        # Project dependencies and scripts
 ├── netlify.toml        # Netlify deployment settings
-├── admin/              # CMS configuration
 ├── public/             # Static files copied to root (favicon, etc.)
 └── src/                # Source files
     ├── _data/          # Global data files (site info, locales)
@@ -52,6 +51,7 @@ The site is built with [Eleventy](https://www.11ty.dev/), a simpler static site 
 ### Installation
 
 1. Clone the repository:
+
    ```bash
    git clone https://github.com/elismatiQ/11ty.elismatiq.com.git
    cd 11ty.elismatiq.com
@@ -102,7 +102,7 @@ This project is licensed under the MIT License.
 
 # <a id="français"></a>David Elisma | Portfolio
 
-*[English above](#english)*
+_[English above](#english)_
 
 Ceci est le code source du site web personnel de portfolio de **David Elisma**.
 
@@ -112,7 +112,7 @@ Le site est construit avec [Eleventy](https://www.11ty.dev/), un générateur de
 
 - **Générateur de Site Statique :** [Eleventy (11ty) v3](https://www.11ty.dev/)
 - **Modèles (Templating) :** Nunjucks (`.njk`), Markdown (`.md`)
-- **CMS :** Decap CMS
+- **CMS :** Aucun (Site statique)
 - **Déploiement :** Netlify
 
 ## 🛠️ Fonctionnalités
@@ -129,7 +129,6 @@ Le site est construit avec [Eleventy](https://www.11ty.dev/), un générateur de
 ├── .eleventy.js        # Configuration Eleventy
 ├── package.json        # Dépendances du projet et scripts
 ├── netlify.toml        # Paramètres de déploiement Netlify
-├── admin/              # Configuration du CMS
 ├── public/             # Fichiers statiques copiés à la racine (favicon, etc.)
 └── src/                # Fichiers sources
     ├── _data/          # Fichiers de données globaux (infos site, locales)
@@ -149,6 +148,7 @@ Le site est construit avec [Eleventy](https://www.11ty.dev/), un générateur de
 ### Installation
 
 1. Cloner le dépôt :
+
    ```bash
    git clone https://github.com/elismatiQ/11ty.elismatiq.com.git
    cd 11ty.elismatiq.com

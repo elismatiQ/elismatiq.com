@@ -1,0 +1,89 @@
+---
+layout: null
+eleventyExcludeFromCollections: true
+---
+<!DOCTYPE html>
+<html class="no-js" lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>{{ site.title }}</title>
+    
+    <!-- SEO / Dublin Core Metadata -->
+    <link rel="schema.dcterms" href="http://purl.org/dc/terms/">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="{{ 'tagline' | t }}">
+    <meta name="author" content="{{ site.author }}">
+    
+    <meta name="dcterms.title" content="{{ site.title }}">
+    <meta name="dcterms.description" content="{{ 'tagline' | t }}">
+    <meta name="dcterms.creator" content="{{ site.author }}">
+    <meta name="dcterms.language" title="ISO639-2" content="eng">
+    <meta name="dcterms.subject" title="gccore" content="Sovereign AI, System Advisor, Digital Government">
+    <meta name="dcterms.issued" title="W3CDTF" content="2025-12-22">
+    <meta name="dcterms.modified" title="W3CDTF" content="2025-12-22">
+    
+    <!-- Multilingual Metadata -->
+    <meta property="dcterms:issued" content="2025-12-22">
+    <meta property="dcterms:modified" content="2025-12-22">
+    <meta property="dcterms:title" lang="en" content="{{ site.title }}">
+    <meta property="dcterms:title" lang="fr" content="David Elisma | Conseiller technique principal en systèmes">
+    <meta property="dcterms:description" lang="en" content="{{ locales.site.tagline.en }}">
+    <meta property="dcterms:description" lang="fr" content="{{ locales.site.tagline.fr }}">
+    
+    <meta name="robots" content="noindex, follow">
+
+    <!-- Stylesheets -->
+    <link rel="stylesheet" href="/assets/css/main.css">
+    <link rel="stylesheet" href="/assets/css/splash.css">
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="/favicon-96x96.png" sizes="96x96" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <link rel="shortcut icon" href="/favicon.ico" />
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+    <meta name="apple-mobile-web-app-title" content="elismatiQ" />
+    <link rel="manifest" href="/site.webmanifest" />
+  </head>
+
+  <body class="splash" vocab="http://schema.org/" resource="#wb-webpage" typeof="WebPage">
+    <div id="bg" class="splash-bg">
+      <div class="splash-overlay"></div>
+    </div>
+    
+    <main class="splash-content" property="mainContentOfPage" resource="#wb-main" typeof="WebPageElement">
+      <div class="sp-hb">
+        <div class="sp-bx col-xs-12">
+          <!-- Visually Hidden H1 for Accessibility -->
+          <h1 property="name" class="sr-only">{{ site.title }}</h1>
+          
+          <div class="splash-hero">
+            <div class="splash-languages">
+              <a href="/en/" class="splash-link" lang="en">English</a>
+              <span class="splash-sep" aria-hidden="true">/</span>
+              <a href="/fr/" class="splash-link" lang="fr">Français</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="sp-bx-bt col-xs-12">
+          <div class="row splash-footer-meta">
+            <div class="col-xs-6 col-md-6 splash-footer-brand">
+              <div class="splash-brand" property="publisher" resource="#wb-publisher" typeof="GovernmentOrganization">
+                <img src="/assets/img/logo-elismatiq-colored.svg" width="130" alt="elismatiQ" property="logo">
+                <meta property="name" content="elismatiQ">
+                <meta property="areaServed" typeof="Country" content="Canada">
+              </div>
+              <p>&copy; 2025 elismatiQ. <span class="wb-inv">All Rights Reserved / Tous droits réservés</span></p>
+              <p>{{ 'dataResidency' | t }}</p>
+            </div>
+            <div class="col-xs-6 col-md-6 text-right splash-tc">
+              <p><a href="/en/terms/" class="sp-lk">Terms and conditions</a> 
+              <span class="splash-sep-small" aria-hidden="true">&bull;</span> 
+              <a href="/fr/avis/" class="sp-lk" lang="fr">Avis</a></p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+  </body>
+</html>

@@ -17,6 +17,17 @@ langAltUrl:
   en: "/fr/"
   fr: "/en/"
 
+# Splash
+splashWelcome:
+  en: "Welcome to David Elisma's Portfolio"
+  fr: "Bienvenue sur le portfolio de David Elisma"
+splashTagline:
+  en: "Senior technical system advisor"
+  fr: "Conseiller technique principal en systèmes"
+splashChoose:
+  en: "Choose your language"
+  fr: "Choisissez votre langue"
+
 # Navigation
 skipToContent:
   en: "Skip to main content"
@@ -110,7 +121,7 @@ experienceList:
     - year: "2023 - Present"
       role: "Front-End Architect & Developer Advocate"
       company: "Canadian Digital Service (CDS) / ESDC"
-      description: "Front-end Architect for AI-Answers and the GC Design System. Bridging the gap between technical teams and policy requirements."
+      description: "Front-end Architect for AI-Answers and the Canada.ca Design System. Bridging the gap between technical teams and policy requirements."
       logo: "cds-logo.png"
     - year: "2019 - 2023"
       role: "Front-End Architect, Canada.ca Design System"
@@ -126,7 +137,7 @@ experienceList:
     - year: "2023 - Présent"
       role: "Architecte Front-End & Avocat des Développeurs"
       company: "Service Numérique Canadien (SNC) / EDSC"
-      description: "Architecte \"front-end\" pour AI-Réponses et le système de design du GC. Faire le pont entre les équipes techniques et les exigences politiques."
+      description: 'Architecte "front-end" pour AI-Réponses et le système de design du Canada.ca. Faire le pont entre les équipes techniques et les exigences politiques.'
       logo: "cds-logo.png"
     - year: "2019 - 2023"
       role: "Architecte Front-End, Système de Design Canada.ca"

@@ -1,0 +1,230 @@
+/* ==========================================================================
+   Splash Page Styles (GC Compliant + Premium Aesthetic)
+   ========================================================================== */
+
+/* Accessibility Utilities */
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border: 0;
+}
+
+.splash-bg {
+  position: fixed;
+  inset: 0;
+  background: var(--color-gray-900) url('/assets/img/bg/personal.png') no-repeat center center/cover;
+  z-index: 1;
+}
+
+.splash-overlay {
+  position: absolute;
+  inset: 0;
+  background: radial-gradient(circle at center, rgba(0, 0, 0, 0.4) 0%, rgba(0, 0, 0, 0.8) 100%);
+  backdrop-filter: blur(4px);
+  z-index: 2;
+}
+
+.splash-content {
+  position: relative;
+  z-index: 10;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: var(--space-m);
+}
+
+.sp-hb {
+  background: rgba(255, 255, 255, 0.9);
+  backdrop-filter: blur(20px);
+  border-radius: var(--border-radius-lg);
+  box-shadow: var(--shadow-xl);
+  max-width: 45rem;
+  width: 100%;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  animation: fadeIn 0.8s ease-out;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  min-height: 300px;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+.sp-bx {
+  padding: var(--space-xl) var(--space-l);
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.sp-bx-bt {
+  background: rgba(0, 0, 0, 0.03);
+  padding: var(--space-m) var(--space-l);
+  border-top: 1px solid rgba(0, 0, 0, 0.05);
+}
+
+/* Branding */
+.splash-brand {
+  margin-bottom: var(--space-s);
+}
+
+.splash-brand img {
+  max-width: 180px;
+  height: auto;
+}
+
+/* Hero Content */
+.splash-hero {
+  margin-block: auto;
+}
+
+/* Language Selection */
+.splash-languages {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: var(--space-l);
+}
+
+.splash-link {
+  font-size: var(--step-1);
+  font-weight: 700;
+  text-decoration: none;
+  color: var(--color-gray-900);
+  transition: all var(--transition-base);
+  position: relative;
+  padding-block: var(--space-3xs);
+}
+
+.splash-link::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 0;
+  height: 2px;
+  background-color: var(--color-primary);
+  transition: width var(--transition-base);
+}
+
+.splash-link:hover {
+  color: var(--color-primary);
+}
+
+.splash-link:hover::after {
+  width: 100%;
+}
+
+.splash-sep {
+  color: var(--color-gray-300);
+  font-size: var(--step-2);
+  font-weight: 300;
+}
+
+/* Footer Meta */
+.splash-footer-meta {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: flex-end;
+  gap: var(--space-m);
+  font-size: var(--step--2);
+  color: var(--color-gray-600);
+}
+
+.splash-tc a {
+  color: var(--color-gray-700);
+  text-decoration: none;
+  font-weight: 600;
+  transition: color var(--transition-fast);
+}
+
+.splash-tc a:hover {
+  color: var(--color-primary);
+  text-decoration: underline;
+}
+
+.splash-sep-small {
+  margin-inline: var(--space-xs);
+  color: var(--color-gray-300);
+}
+
+.splash-footer-brand {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.splash-tc {
+  text-align: right;
+  justify-content: flex-end;
+}
+
+@media (max-width: 40rem) {
+  .splash-footer-brand,
+  .splash-tc {
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+  }
+}
+
+.splash-copyright p {
+  margin: 0;
+  line-height: 1.4;
+}
+
+/* Responsiveness */
+@media (max-width: 40rem) {
+  .splash-footer-meta {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+  
+  .splash-languages {
+    gap: var(--space-m);
+  }
+  
+  .splash-title {
+    font-size: var(--step-3);
+  }
+}
+
+/* Grid helper for GC compatibility */
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+}
+
+.col-xs-12 {
+  flex: 0 0 100%;
+  max-width: 100%;
+}
+
+@media (min-width: 48rem) {
+  .col-md-8 {
+    flex: 0 0 66.666667%;
+    max-width: 66.666667%;
+  }
+  .col-md-4 {
+    flex: 0 0 33.333333%;
+    max-width: 33.333333%;
+  }
+  .text-right {
+    text-align: right;
+  }
+}
