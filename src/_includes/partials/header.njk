@@ -35,12 +35,31 @@
 
       <!-- Language Toggle -->
       <div class="lang-toggle" role="navigation" aria-label="Language selection">
+        {% set altLang = 'fr' if lang == 'en' else 'en' %}
+        {% set translatedUrl = "" %}
+        {% if translationKey %}
+          {% for item in collections.all %}
+            {% if item.data.translationKey == translationKey and item.data.lang == altLang %}
+              {% set translatedUrl = item.url %}
+            {% endif %}
+          {% endfor %}
+        {% endif %}
+
+        {# Fallback for pages without translationKey #}
+        {% if not translatedUrl %}
+          {% if lang == 'en' %}
+            {% set translatedUrl = page.url | replace('/en/', '/fr/') | replace('/blog/', '/blogue/') | replace('/about/', '/a-propos/') %}
+          {% else %}
+            {% set translatedUrl = page.url | replace('/fr/', '/en/') | replace('/blogue/', '/blog/') | replace('/a-propos/', '/about/') %}
+          {% endif %}
+        {% endif %}
+
         {% if lang == 'en' %}
-        <a href="{{ page.url | replace('/fr/', '/en/') | replace('/blogue/', '/blog/') }}" class="active-lang">EN</a>
-        <a href="{{ page.url | replace('/en/', '/fr/') | replace('/blog/', '/blogue/') }}">FR</a>
+        <a href="{{ page.url }}" class="active-lang">EN</a>
+        <a href="{{ translatedUrl }}">FR</a>
         {% else %}
-        <a href="{{ page.url | replace('/fr/', '/en/') | replace('/blogue/', '/blog/') }}">EN</a>
-        <a href="{{ page.url | replace('/en/', '/fr/') | replace('/blog/', '/blogue/') }}" class="active-lang">FR</a>
+        <a href="{{ translatedUrl }}">EN</a>
+        <a href="{{ page.url }}" class="active-lang">FR</a>
         {% endif %}
       </div>
       

@@ -11,13 +11,26 @@
 <link rel="canonical" href="{{ site.url }}{{ page.url }}">
 
 <!-- hreflang for bilingual -->
-{% if lang == 'en' %}
-<link rel="alternate" hreflang="en" href="{{ site.url }}{{ page.url }}">
-<link rel="alternate" hreflang="fr" href="{{ site.url }}{{ page.url | replace('/en/', '/fr/') | replace('/about/', '/a-propos/') | replace('/projects/', '/projets/') | replace('/blog/', '/blogue/') }}">
-{% elif lang == 'fr' %}
-<link rel="alternate" hreflang="fr" href="{{ site.url }}{{ page.url }}">
-<link rel="alternate" hreflang="en" href="{{ site.url }}{{ page.url | replace('/fr/', '/en/') | replace('/a-propos/', '/about/') | replace('/projets/', '/projects/') | replace('/blogue/', '/blog/') }}">
+{% set altLang = 'fr' if lang == 'en' else 'en' %}
+{% set altUrl = "" %}
+{% if translationKey %}
+  {% for item in collections.all %}
+    {% if item.data.translationKey == translationKey and item.data.lang == altLang %}
+      {% set altUrl = site.url + item.url %}
+    {% endif %}
+  {% endfor %}
 {% endif %}
+
+{% if not altUrl %}
+  {% if lang == 'en' %}
+    {% set altUrl = site.url + page.url | replace('/en/', '/fr/') | replace('/about/', '/a-propos/') | replace('/projects/', '/projets/') | replace('/blog/', '/blogue/') %}
+  {% else %}
+    {% set altUrl = site.url + page.url | replace('/fr/', '/en/') | replace('/a-propos/', '/about/') | replace('/projets/', '/projects/') | replace('/blogue/', '/blog/') %}
+  {% endif %}
+{% endif %}
+
+<link rel="alternate" hreflang="{{ lang }}" href="{{ site.url }}{{ page.url }}">
+<link rel="alternate" hreflang="{{ altLang }}" href="{{ altUrl }}">
 <link rel="alternate" hreflang="x-default" href="{{ site.url }}/en/">
 
 <!-- Open Graph / Facebook -->

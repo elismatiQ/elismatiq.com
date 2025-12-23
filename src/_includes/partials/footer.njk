@@ -82,12 +82,30 @@
       
       <!-- Language Toggle -->
       <div class="footer-bottom-col-3">
+        {% set altLang = 'fr' if lang == 'en' else 'en' %}
+        {% set translatedUrl = "" %}
+        {% if translationKey %}
+          {% for item in collections.all %}
+            {% if item.data.translationKey == translationKey and item.data.lang == altLang %}
+              {% set translatedUrl = item.url %}
+            {% endif %}
+          {% endfor %}
+        {% endif %}
+
+        {% if not translatedUrl %}
+          {% if lang == 'en' %}
+            {% set translatedUrl = page.url | replace('/en/', '/fr/') | replace('/blog/', '/blogue/') | replace('/about/', '/a-propos/') %}
+          {% else %}
+            {% set translatedUrl = page.url | replace('/fr/', '/en/') | replace('/blogue/', '/blog/') | replace('/a-propos/', '/about/') %}
+          {% endif %}
+        {% endif %}
+
         <ul class="language-toggle">
           <li class="{% if lang == 'en' %}active{% endif %}">
-            <a href="{{ page.url | replace('/fr/', '/en/') | replace('/blogue/', '/blog/') | replace('/a-propos/', '/about/') }}">ENG</a>
+            <a href="{{ page.url if lang == 'en' else translatedUrl }}">ENG</a>
           </li>
           <li class="{% if lang == 'fr' %}active{% endif %}">
-            <a href="{{ page.url | replace('/en/', '/fr/') | replace('/blog/', '/blogue/') | replace('/about/', '/a-propos/') }}">FRA</a>
+            <a href="{{ page.url if lang == 'fr' else translatedUrl }}">FRA</a>
           </li>
         </ul>
       </div>
