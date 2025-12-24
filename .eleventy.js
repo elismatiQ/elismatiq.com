@@ -35,6 +35,11 @@ module.exports = function (eleventyConfig) {
     return key;
   });
 
+  // Strip date prefix from slug (e.g., "2024-09-16-welcome" → "welcome")
+  eleventyConfig.addFilter("stripDateFromSlug", (slug) => {
+    return slug.replace(/^\d{4}-\d{2}-\d{2}-/, "");
+  });
+
   // Blog collections
   eleventyConfig.addCollection("blogEn", function (collectionApi) {
     return collectionApi.getFilteredByGlob("src/en/blog/**/*.md").reverse();

@@ -80,7 +80,7 @@
      Layout
      ------------------------------------------------------------------------- */
   --max-width: 75rem; /* 1200px */
-  --content-width: 45rem; /* 720px - for prose */
+  --content-width: 85ch; 
   --sidebar-width: 18rem;
   
   --border-radius-sm: 0.25rem;
