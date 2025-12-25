@@ -36,6 +36,6 @@ translationKey: contact
 
 <section class="contact-info">
   <h2>Contact Information</h2>
-  <p><strong>Email:</strong> <a href="mailto:{{ site.email }}">{{ site.email }}</a></p>
+  <p><strong>Email:</strong> {{ site.email | obfuscateEmail | safe }}</p>
   <p><strong>Location:</strong> {{ site.address }}</p>
 </section>

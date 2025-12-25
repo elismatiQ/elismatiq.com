@@ -1,6 +1,6 @@
 # <a id="contributor-covenant-code-of-conduct">Contributor Covenant Code of Conduct
 
-*[Français ci-dessous](#code-de-conduite-du-contributor-covenant)*
+_[Français ci-dessous](#code-de-conduite-du-contributor-covenant)_
 
 ## Our Pledge
 
@@ -45,7 +45,7 @@ We agree to restrict the following behaviors in our community. Instances, threat
 
 Tensions can occur between community members even when they are trying their best to collaborate. Not every conflict represents a code of conduct violation, and this Code of Conduct reinforces encouraged behaviors and norms that can help avoid conflicts and minimize harm.
 
-When an incident does occur, it is important to report it promptly. To report a possible violation, please contact the project maintainers at info@elismatiq.com.
+When an incident does occur, it is important to report it promptly. To report a possible violation, please contact the project maintainers via our [website contact form](https://elismatiq.com/en/contact/).
 
 Community Moderators take reports of violations seriously and will make every effort to respond in a timely manner. They will investigate all reports of code of conduct violations, reviewing messages, logs, and recordings, or interviewing witnesses and other participants. Community Moderators will keep investigation and enforcement actions as transparent as possible while prioritizing safety and confidentiality. In order to honor these values, enforcement actions are carried out in private with the involved parties, but communicating to the whole community may be part of a mutually agreed upon resolution.
 
@@ -54,16 +54,19 @@ Community Moderators take reports of violations seriously and will make every ef
 If an investigation by the Community Moderators finds that this Code of Conduct has been violated, the following enforcement ladder may be used to determine how best to repair harm, based on the incident’s impact on the individuals involved and the community as a whole. Depending on the severity of a violation, lower rungs on the ladder may be skipped.
 
 1. **Warning**
+
    - **Event:** A violation involving a single incident or series of incidents.
    - **Consequence:** A private, written warning from the Community Moderators.
    - **Repair:** Examples of repair include a private written apology, acknowledgement of responsibility, and seeking clarification on expectations.
 
 2. **Temporarily Limited Activities**
+
    - **Event:** A repeated incidence of a violation that previously resulted in a warning, or the first incidence of a more serious violation.
    - **Consequence:** A private, written warning with a time-limited cooldown period designed to underscore the seriousness of the situation and give the community members involved time to process the incident. The cooldown period may be limited to particular communication channels or interactions with particular community members.
    - **Repair:** Examples of repair may include making an apology, using the cooldown period to reflect on actions and impact, and being thoughtful about re-entering community spaces after the period is over.
 
 3. **Temporary Suspension**
+
    - **Event:** A pattern of repeated violation which the Community Moderators have tried to address with warnings, or a single serious violation.
    - **Consequence:** A private written warning with conditions for return from suspension. In general, temporary suspensions give the person being suspended time to reflect upon their behavior and possible corrective actions.
    - **Repair:** Examples of repair include respecting the spirit of the suspension, meeting the specified conditions for return, and being thoughtful about how to reintegrate with the community when the suspension is lifted.
@@ -89,7 +92,7 @@ Contributor Covenant is stewarded by the [Organization for Ethical Source](https
 
 # <a id="code-de-conduite-du-contributor-covenant"></a>Code de Conduite du Contributor Covenant
 
-*[English above](#contributor-covenant-code-of-conduct)*
+_[English above](#contributor-covenant-code-of-conduct)_
 
 ## Notre Engagement
 
@@ -134,7 +137,7 @@ Nous acceptons de restreindre les comportements suivants dans notre communauté.
 
 Des tensions peuvent survenir entre les membres de la communauté même lorsqu'ils font de leur mieux pour collaborer. Tout conflit ne représente pas une violation du code de conduite, et ce Code de Conduite renforce les comportements et normes encouragés qui peuvent aider à éviter les conflits et à minimiser les préjudices.
 
-Lorsqu'un incident se produit, il est important de le signaler rapidement. Pour signaler une violation possible, veuillez contacter les responsables du projet à info@elismatiq.com.
+Lorsqu'un incident se produit, il est important de le signaler rapidement. Pour signaler une violation possible, veuillez contacter les responsables du projet via notre [formulaire de contact](https://elismatiq.com/fr/contact/).
 
 Les modérateurs de la communauté prennent les rapports de violations au sérieux et feront tout leur possible pour répondre en temps opportun. Ils enquêteront sur tous les rapports de violations du code de conduite, en examinant les messages, les journaux et les enregistrements, ou en interrogeant des témoins et d'autres participants. Les modérateurs de la communauté garderont les actions d'enquête et d'application aussi transparentes que possible tout en priorisant la sécurité et la confidentialité. Afin d'honorer ces valeurs, les mesures d'application sont menées en privé avec les parties impliquées, mais la communication à l'ensemble de la communauté peut faire partie d'une résolution mutuellement convenue.
 
@@ -143,16 +146,19 @@ Les modérateurs de la communauté prennent les rapports de violations au série
 Si une enquête des modérateurs de la communauté révèle que ce Code de Conduite a été violé, l'échelle d'application suivante peut être utilisée pour déterminer la meilleure façon de réparer le préjudice, en fonction de l'impact de l'incident sur les personnes impliquées et la communauté dans son ensemble. Selon la gravité d'une violation, les échelons inférieurs de l'échelle peuvent être sautés.
 
 1. **Avertissement**
+
    - **Événement :** Une violation impliquant un incident unique ou une série d'incidents.
    - **Conséquence :** Un avertissement écrit et privé des modérateurs de la communauté.
    - **Réparation :** Des exemples de réparation incluent des excuses écrites privées, la reconnaissance de la responsabilité et la demande de clarification sur les attentes.
 
 2. **Activités Temporairement Limitées**
+
    - **Événement :** Une incidence répétée d'une violation qui a précédemment entraîné un avertissement, ou la première incidence d'une violation plus grave.
    - **Conséquence :** Un avertissement écrit et privé avec une période de réflexion limitée dans le temps conçue pour souligner la gravité de la situation et donner aux membres de la communauté impliqués le temps de traiter l'incident. La période de réflexion peut être limitée à des canaux de communication particuliers ou à des interactions avec des membres particuliers de la communauté.
    - **Réparation :** Des exemples de réparation peuvent inclure faire des excuses, utiliser la période de réflexion pour réfléchir aux actions et à l'impact, et être réfléchi sur la réintégration des espaces communautaires après la fin de la période.
 
 3. **Suspension Temporaire**
+
    - **Événement :** Un modèle de violation répétée que les modérateurs de la communauté ont essayé de traiter avec des avertissements, ou une seule violation grave.
    - **Conséquence :** Un avertissement écrit et privé avec des conditions de retour de suspension. En général, les suspensions temporaires donnent à la personne suspendue le temps de réfléchir à son comportement et aux actions correctives possibles.
    - **Réparation :** Des exemples de réparation incluent le respect de l'esprit de la suspension, le respect des conditions spécifiées pour le retour et la réflexion sur la manière de réintégrer la communauté lorsque la suspension est levée.

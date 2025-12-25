@@ -40,6 +40,17 @@ module.exports = function (eleventyConfig) {
     return slug.replace(/^\d{4}-\d{2}-\d{2}-/, "");
   });
 
+  // Obfuscate email address
+  // Obfuscate email address logic
+  const obfuscate = (email) => {
+    if (!email) return "";
+    const escaped = email.split("").map(char => "\\u" + ("0000" + char.charCodeAt(0).toString(16)).slice(-4)).join("");
+    return `<a href="javascript:location='mailto:${escaped}';void 0"><script type="text/javascript">document.write('${escaped}')</script></a>`;
+  };
+
+  eleventyConfig.addFilter("obfuscateEmail", obfuscate);
+  eleventyConfig.addShortcode("obfuscateEmail", obfuscate);
+
   // Blog collections
   eleventyConfig.addCollection("blogEn", function (collectionApi) {
     return collectionApi.getFilteredByGlob("src/en/blog/**/*.md").reverse();

@@ -182,6 +182,7 @@ translationKey: home
         
         <div class="contact-detail-item">
            <h3>{{ 'contactEmail' | t }}</h3>
+           <p>{{ site.email | obfuscateEmail | safe }}</p>
         </div>
       </div>
 

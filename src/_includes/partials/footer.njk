@@ -23,7 +23,7 @@
         
         <div class="footer-address-block">
           <p class="footer-heading">{{ 'footerEmailLabel' | t }}</p>
-          <p><a href="mailto:{{ site.email }}">{{ site.email }}</a></p>
+          <p>{{ site.email | obfuscateEmail | safe }}</p>
         </div>
       </div>
       
