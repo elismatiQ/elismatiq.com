@@ -159,6 +159,37 @@
   background-color: var(--color-primary-dark);
 }
 
+/* ESP Subscribe Form - Additional Styles */
+.esp-subscribe-form {
+  width: 100%;
+}
+
+.esp-subscribe-form .subscribe-input {
+  font-family: var(--font-sans);
+  color: var(--color-gray-900);
+  background-color: var(--color-white);
+}
+
+.esp-subscribe-form .subscribe-input::placeholder {
+  color: var(--color-gray-500);
+}
+
+.esp-subscribe-form .subscribe-input:focus {
+  box-shadow: var(--focus-ring);
+}
+
+.esp-subscribe-form .subscribe-btn {
+  font-family: var(--font-sans);
+  letter-spacing: 0.05em;
+  white-space: nowrap;
+}
+
+.esp-subscribe-form .subscribe-btn:focus-visible {
+  outline: none;
+  box-shadow: var(--focus-ring-offset);
+}
+
+
 /* Bottom Bar */
 .footer-bottom {
   padding-top: var(--space-l);

@@ -43,10 +43,10 @@
         <h3 class="footer-heading">{{ 'footerSubscribeLabel' | t }}</h3>
         <p>{{ 'newsletterText' | t }}</p>
         
-        <form class="subscribe-form js-subscribe-form" action="#" method="POST" data-netlify="true" name="newsletter-{{ lang }}">
-          <label for="newsletter-email-{{ lang }}" class="sr-only">{{ 'emailLabel' | t }}</label>
-          <input type="email" id="newsletter-email-{{ lang }}" name="email" class="subscribe-input" placeholder="{{ 'emailLabel' | t }}" required>
-          <button type="submit" class="subscribe-btn">{{ 'subscribeBtn' | t }}</button>
+        <form class="subscribe-form esp-subscribe-form" accept-charset="UTF-8" action="https://api.cakemail.dev/form_submission/7996751fe7d040934f2afebc5382bd30e0e1d14f9af678921e32fadc2fba3479de4a387eec819c54a5f36b75f4300887" autocomplete="on" enctype="multipart/form-data" method="post" target="_self">
+          <label for="esp-email-{{ lang }}" class="sr-only">{{ 'emailLabel' | t }}</label>
+          <input type="email" id="esp-email-{{ lang }}" name="email" class="subscribe-input" placeholder="{{ 'emailLabel' | t }}" required>
+          <button type="submit" name="submit_button" class="subscribe-btn">{{ 'subscribeBtn' | t }}</button>
         </form>
       </div>
     </div>
