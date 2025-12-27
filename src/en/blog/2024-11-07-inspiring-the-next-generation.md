@@ -13,7 +13,7 @@ Imagine a room filled with the boundless energy and limitless potential of 70 Bl
 
 ## Diversity in Cybersecurity: A Pressing Challenge
 
-The cybersecurity industry has long grappled with a severe lack of diversity, particularly when it comes to racial representation. According to a 2021 (ISC)² Cybersecurity Workforce Study, a mere 9% of cybersecurity professionals globally identified as Black. In Canada, the situation is similarly dire, with visible minorities still underrepresented in the tech sector, including cybersecurity.
+The cybersecurity industry has long grappled with a severe lack of diversity, particularly when it comes to racial representation. According to a 2021 (ISC)<sup>2</sup> Cybersecurity Workforce Study, a mere 9% of cybersecurity professionals globally identified as Black. In Canada, the situation is similarly dire, with visible minorities still underrepresented in the tech sector, including cybersecurity.
 
 ## Empowering the Next Generation with Inspiring Role Models
 

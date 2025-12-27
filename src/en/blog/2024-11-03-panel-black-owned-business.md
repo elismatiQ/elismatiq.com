@@ -7,7 +7,7 @@ title: "Panel on AI for Black-owned businesses"
 translationKey: 2024-11-03-panel-black-owned-business
 ---
 
-I recently had the incredible opportunity to be a panelist at the [3rd Annual Federal Black Entrepreneurial Ecosystem Conference 2024](https://acbncanada.com/federal-black-entrepreneurship-ecosystem-conference-2024/), where the focus was on "**Practical Uses and Strategies of AI to Accelerate Your Business**". The panel, held on <time datetime="2024-10-29">October 29th</time>, was an amazing experience, and I'm excited to share some of the key insights and discussions that emerged.
+I recently had the incredible opportunity to be a panelist at the [3rd Annual Federal Black Entrepreneurial Ecosystem Conference 2024](https://acbncanada.com/federal-black-entrepreneurship-ecosystem-conference-2024/), where the focus was on "**Practical Uses and Strategies of artificial intelligence (AI) to Accelerate Your Business**". The panel, held on <time datetime="2024-10-29">October 29th</time>, was an amazing experience, and I'm excited to share some of the key insights and discussions that emerged.
 
 ## The Power of AI for Growth and Equity
 

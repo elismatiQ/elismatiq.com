@@ -9,15 +9,15 @@ translationKey: 2024-11-07-inspiring-the-next-generation
 
 ## Introduction
 
-Imaginez une salle remplie de l'énergie débordante et du potentiel illimité de 70 élèves noirs du secondaire, tous curieux d'en apprendre davantage sur le monde passionnant de la cybersécurité. C'est exactement la scène qui s'est déroulée lors de la 2e édition annuelle de la Journée des carrières du CSE-CST 2024 à Ottawa, où j'ai eu l'honneur de prendre la parole et d'échanger avec ce groupe extraordinaire de jeunes esprits. En les voyant boire mes paroles, je n'ai pu m'empêcher de ressentir une vague d'enthousiasme pour l'avenir de ce domaine dynamique.
+Imaginez une salle remplie de l'énergie débordante et du potentiel illimité de 70 élèves noirs du secondaire, tous curieux d'en apprendre davantage sur le monde passionnant de la cybersécurité. C'est exactement la scène qui s'est déroulée lors de la 2e édition annuelle de la Journée des carrières du Centre de la sécurité des télécommunications (CST) 2024 à Ottawa, où j'ai eu l'honneur de prendre la parole et d'échanger avec ce groupe extraordinaire de jeunes esprits. En les voyant boire mes paroles, je n'ai pu m'empêcher de ressentir une vague d'enthousiasme pour l'avenir de ce domaine dynamique.
 
 ## La diversité en cybersécurité&nbsp;: Un défi de taille
 
-L'industrie de la cybersécurité est confrontée depuis longtemps à un manque criant de diversité, particulièrement en ce qui concerne la représentation raciale. Selon une étude de la main-d'œuvre en cybersécurité menée par (ISC)² en 2021, seulement 9 % des professionnels de la cybersécurité dans le monde s'identifient comme noirs. Au Canada, la situation est tout aussi préoccupante, les minorités visibles étant encore sous-représentées dans le secteur des technologies, y compris en cybersécurité.
+L'industrie de la cybersécurité est confrontée depuis longtemps à un manque criant de diversité, particulièrement en ce qui concerne la représentation raciale. Selon une étude de la main-d'œuvre en cybersécurité menée par (ISC)<sup>2</sup> en 2021, seulement 9&nbsp;% des professionnels de la cybersécurité dans le monde s'identifient comme noirs. Au Canada, la situation est tout aussi préoccupante, les minorités visibles étant encore sous-représentées dans le secteur des technologies, y compris en cybersécurité.
 
 ## Autonomiser la prochaine génération grâce à des modèles inspirants
 
-Mais lors de la Journée des carrières du CST, le vent tournait. Le point fort de l'événement a été l'apparition de Caroline Xavier, la personne noire occupant le rang le plus élevé au sein de la fonction publique canadienne. En tant que chef du Centre de la sécurité des télécommunications (CST), la présence de Caroline témoignait du pouvoir de la représentation et de l'impact qu'un seul modèle inspirant peut avoir.
+Mais lors de la Journée des carrières du CST, le vent tournait. Le point fort de l'événement a été l'apparition de Caroline Xavier, la personne noire occupant le rang le plus élevé au sein de la fonction publique canadienne. En tant que chef du CST, la présence de Caroline témoignait du pouvoir de la représentation et de l'impact qu'un seul modèle inspirant peut avoir.
 
 - Le parcours de Caroline, fille d'immigrants haïtiens 🇭🇹, et son ascension vers ce poste prestigieux ont été une source d'inspiration puissante pour les jeunes participants.
 - Les élèves se sont empressés d'approcher Caroline pour prendre des selfies et l'interroger sur son parcours remarquable, alimentant ainsi leurs propres rêves de réussite.
@@ -25,7 +25,7 @@ Mais lors de la Journée des carrières du CST, le vent tournait. Le point fort 
 
 ## Susciter la curiosité et la compétition
 
-J'ai eu la chance d'interagir directement avec les élèves et ce fut un moment magique pour moi. Je les ai mis au défi avec une série de questions stimulantes sur la cybersécurité, l'IA et le codage, offrant des prix convoités comme des billets à l'effigie de Viola Desmond (10 $ CA) et des livres Hidden Figures (Les Figures de l'ombre) aux gagnants.
+J'ai eu la chance d'interagir directement avec les élèves et ce fut un moment magique pour moi. Je les ai mis au défi avec une série de questions stimulantes sur la cybersécurité, l'intelligence artificielle (IA) et le codage, offrant des prix convoités comme des billets à l'effigie de Viola Desmond (10&nbsp;$ CA) et des livres Hidden Figures (Les Figures de l'ombre) aux gagnants.
 
 - Les réponses des élèves ont démontré une bonne compréhension de ces technologies de pointe et une véritable passion pour façonner l'avenir numérique.
 - En reliant le domaine de la cybersécurité à des thèmes plus larges de diversité et de représentation, nous avons pu inspirer et responsabiliser ces jeunes esprits.

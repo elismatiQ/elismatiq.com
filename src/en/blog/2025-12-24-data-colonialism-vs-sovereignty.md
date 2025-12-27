@@ -23,7 +23,7 @@ Expert insight: The AIDA mandate
 
 <blockquote>"A person who is responsible for a high-impact system must... establish measures to identify, assess and mitigate the risks of harm or biased output that could result from the use of the system."</blockquote>
 
-## Indigenous data sovereignty and OCAP®
+## Indigenous data sovereignty and <abbr title="Ownership, Control, Access, and Possession">OCAP</abbr>®
 
 In Canada, the most sophisticated model for data ethics comes from Indigenous communities. **Indigenous Data Sovereignty** asserts that Indigenous nations have the right to govern the collection and application of their data. For enterprise architects, the **OCAP® principles** (Ownership, Control, Access, and Possession) are now essential for any ethical data strategy.
 
@@ -35,9 +35,9 @@ In the next decade, **Data Sovereignty** will be more than a checkbox—it will 
 
 ### Sources
 
-1. [Parliament of Canada \- Bill C-27 Status & Text](https://www.parl.ca/legisinfo/en/bill/44-1/c-27)
-2. [First Nations Information Governance Centre (FNIGC) \- OCAP® Principles](https://fnigc.ca/ocap-training/)
-3. [Innovation, Science and Economic Development Canada (ISED) \- Digital Charter](https://ised-isde.canada.ca/site/innovation-better-canada/en/canadas-digital-charter-trust-digital-world)
+- [Parliament of Canada \- Bill C-27 Status & Text](https://www.parl.ca/legisinfo/en/bill/44-1/c-27)
+- [First Nations Information Governance Centre (FNIGC) \- OCAP® Principles](https://fnigc.ca/ocap-training/)
+- [Innovation, Science and Economic Development Canada (ISED) \- Digital Charter](https://ised-isde.canada.ca/site/innovation-better-canada/en/canadas-digital-charter-trust-digital-world)
 
 ### Accuracy rating: 98/100
 

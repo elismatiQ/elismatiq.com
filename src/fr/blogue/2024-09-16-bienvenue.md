@@ -11,7 +11,7 @@ Bienvenue sur mon nouveau site web! En tant que **conseiller technique principal
 
 ## Technologie
 
-IA et automatisation, Expérience développeur et Systèmes de design.
+Intelligence artificielle et automatisation, Expérience développeur et Systèmes de design.
 
 ## Gouvernance
 

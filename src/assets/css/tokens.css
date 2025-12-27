@@ -371,3 +371,7 @@ a:hover {
   min-height: 10rem;
   resize: vertical;
 }
+
+.lowercase {
+  text-transform: lowercase;
+}

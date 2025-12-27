@@ -7,7 +7,7 @@ title: "Panel sur l'IA pour les entreprises appartenant à des personnes noires"
 translationKey: 2024-11-03-panel-black-owned-business
 ---
 
-J'ai récemment eu l'incroyable opportunité de participer en tant que panéliste à la [3e conférence annuelle de l'Écosystème entrepreneurial noir fédéral 2024](https://acbncanada.com/federal-black-entrepreneurship-ecosystem-conference-2024/), où l'accent était mis sur les &laquo;&nbsp;**Utilisations pratiques et stratégies de l'IA pour accélérer votre entreprise**&nbsp;&raquo;. Le panel, qui s'est tenu le <time datetime="2024-10-29">29 octobre</time>, a été une expérience enrichissante, et je suis ravi de partager certains des points clés et des discussions qui en sont ressortis.
+J'ai récemment eu l'incroyable opportunité de participer en tant que panéliste à la [3e conférence annuelle de l'Écosystème entrepreneurial noir fédéral 2024](https://acbncanada.com/federal-black-entrepreneurship-ecosystem-conference-2024/), où l'accent était mis sur les &laquo;&nbsp;**Utilisations pratiques et stratégies de l'intelligence artificielle (IA) pour accélérer votre entreprise**&nbsp;&raquo;. Le panel, qui s'est tenu le <time datetime="2024-10-29">29 octobre</time>, a été une expérience enrichissante, et je suis ravi de partager certains des points clés et des discussions qui en sont ressortis.
 
 ## Le pouvoir de l'IA pour la croissance et l'équité
 
