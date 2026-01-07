@@ -104,7 +104,7 @@ Nous nous engageons à favoriser un environnement qui respecte et promeut la dig
 
 Tout en reconnaissant les différences de normes sociales, nous nous efforçons tous de répondre aux attentes de notre communauté en matière de comportement positif. Nous comprenons également que nos paroles et nos actions peuvent être interprétées différemment de ce que nous avions l'intention, en fonction de la culture, des antécédents ou de la langue maternelle.
 
-Gardant ces considérations à l'esprit, nous acceptons de nous comporter avec attention les uns envers les autres et d'agir de manière à centrer nos valeurs communes, notamment :
+Gardant ces considérations à l'esprit, nous acceptons de nous comporter avec attention les uns envers les autres et d'agir de manière à centrer nos valeurs communes, notamment&nbsp;:
 
 1. Respecter le but de notre communauté, nos activités et nos modes de rassemblement.
 2. S'engager avec gentillesse et honnêteté envers les autres.
@@ -147,26 +147,26 @@ Si une enquête des modérateurs de la communauté révèle que ce Code de Condu
 
 1. **Avertissement**
 
-   - **Événement :** Une violation impliquant un incident unique ou une série d'incidents.
-   - **Conséquence :** Un avertissement écrit et privé des modérateurs de la communauté.
-   - **Réparation :** Des exemples de réparation incluent des excuses écrites privées, la reconnaissance de la responsabilité et la demande de clarification sur les attentes.
+   - **Événement&nbsp;:** Une violation impliquant un incident unique ou une série d'incidents.
+   - **Conséquence&nbsp;:** Un avertissement écrit et privé des modérateurs de la communauté.
+   - **Réparation&nbsp;:** Des exemples de réparation incluent des excuses écrites privées, la reconnaissance de la responsabilité et la demande de clarification sur les attentes.
 
 2. **Activités Temporairement Limitées**
 
-   - **Événement :** Une incidence répétée d'une violation qui a précédemment entraîné un avertissement, ou la première incidence d'une violation plus grave.
-   - **Conséquence :** Un avertissement écrit et privé avec une période de réflexion limitée dans le temps conçue pour souligner la gravité de la situation et donner aux membres de la communauté impliqués le temps de traiter l'incident. La période de réflexion peut être limitée à des canaux de communication particuliers ou à des interactions avec des membres particuliers de la communauté.
-   - **Réparation :** Des exemples de réparation peuvent inclure faire des excuses, utiliser la période de réflexion pour réfléchir aux actions et à l'impact, et être réfléchi sur la réintégration des espaces communautaires après la fin de la période.
+   - **Événement&nbsp;:** Une incidence répétée d'une violation qui a précédemment entraîné un avertissement, ou la première incidence d'une violation plus grave.
+   - **Conséquence&nbsp;:** Un avertissement écrit et privé avec une période de réflexion limitée dans le temps conçue pour souligner la gravité de la situation et donner aux membres de la communauté impliqués le temps de traiter l'incident. La période de réflexion peut être limitée à des canaux de communication particuliers ou à des interactions avec des membres particuliers de la communauté.
+   - **Réparation&nbsp;:** Des exemples de réparation peuvent inclure faire des excuses, utiliser la période de réflexion pour réfléchir aux actions et à l'impact, et être réfléchi sur la réintégration des espaces communautaires après la fin de la période.
 
 3. **Suspension Temporaire**
 
-   - **Événement :** Un modèle de violation répétée que les modérateurs de la communauté ont essayé de traiter avec des avertissements, ou une seule violation grave.
-   - **Conséquence :** Un avertissement écrit et privé avec des conditions de retour de suspension. En général, les suspensions temporaires donnent à la personne suspendue le temps de réfléchir à son comportement et aux actions correctives possibles.
-   - **Réparation :** Des exemples de réparation incluent le respect de l'esprit de la suspension, le respect des conditions spécifiées pour le retour et la réflexion sur la manière de réintégrer la communauté lorsque la suspension est levée.
+   - **Événement&nbsp;:** Un modèle de violation répétée que les modérateurs de la communauté ont essayé de traiter avec des avertissements, ou une seule violation grave.
+   - **Conséquence&nbsp;:** Un avertissement écrit et privé avec des conditions de retour de suspension. En général, les suspensions temporaires donnent à la personne suspendue le temps de réfléchir à son comportement et aux actions correctives possibles.
+   - **Réparation&nbsp;:** Des exemples de réparation incluent le respect de l'esprit de la suspension, le respect des conditions spécifiées pour le retour et la réflexion sur la manière de réintégrer la communauté lorsque la suspension est levée.
 
 4. **Bannissement Permanent**
-   - **Événement :** Un modèle de violations répétées du code de conduite que d'autres étapes de l'échelle n'ont pas réussi à résoudre, ou une violation si grave que les modérateurs de la communauté déterminent qu'il n'y a aucun moyen de garder la communauté en sécurité avec cette personne comme membre.
-   - **Conséquence :** L'accès à tous les espaces communautaires, outils et canaux de communication est supprimé. En général, les bannissements permanents devraient être rarement utilisés, devraient avoir un raisonnement solide derrière eux et ne devraient être utilisés que si le travail à travers d'autres remèdes n'a pas réussi à changer le comportement.
-   - **Réparation :** Il n'y a pas de réparation possible dans les cas de cette gravité.
+   - **Événement&nbsp;:** Un modèle de violations répétées du code de conduite que d'autres étapes de l'échelle n'ont pas réussi à résoudre, ou une violation si grave que les modérateurs de la communauté déterminent qu'il n'y a aucun moyen de garder la communauté en sécurité avec cette personne comme membre.
+   - **Conséquence&nbsp;:** L'accès à tous les espaces communautaires, outils et canaux de communication est supprimé. En général, les bannissements permanents devraient être rarement utilisés, devraient avoir un raisonnement solide derrière eux et ne devraient être utilisés que si le travail à travers d'autres remèdes n'a pas réussi à changer le comportement.
+   - **Réparation&nbsp;:** Il n'y a pas de réparation possible dans les cas de cette gravité.
 
 Cette échelle d'application est destinée à servir de ligne directrice. Elle ne limite pas la capacité des gestionnaires de communauté à utiliser leur discrétion et leur jugement, dans le meilleur intérêt de notre communauté.
 

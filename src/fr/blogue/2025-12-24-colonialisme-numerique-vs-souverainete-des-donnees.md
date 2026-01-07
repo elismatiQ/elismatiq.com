@@ -39,7 +39,7 @@ Au cours de la prochaine décennie, la **souveraineté des données** sera bien 
 2. [Les principes de PCAP® des Premières Nations](https://fnigc.ca/fr/les-principes-de-pcap-des-premieres-nations/)
 3. [Innovation, Science et Développement économique Canada (ISDE) \- Charte numérique](https://ised-isde.canada.ca/site/innover-meilleur-canada/fr/charte-canadienne-numerique-confiance-dans-monde-numerique)
 
-### Cote de confiance: 98/100
+### Évaluation de l'exactitude&nbsp;: 98/100
 
 - La distinction entre résidence et souveraineté est juridiquement précise.
 - Le statut législatif du projet de loi C-27 est à jour au début de 2025.

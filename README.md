@@ -110,17 +110,17 @@ Le site est construit avec [Eleventy](https://www.11ty.dev/), un générateur de
 
 ## 🚀 Pile Technologique
 
-- **Générateur de Site Statique :** [Eleventy (11ty) v3](https://www.11ty.dev/)
-- **Modèles (Templating) :** Nunjucks (`.njk`), Markdown (`.md`)
-- **CMS :** Aucun (Site statique)
-- **Déploiement :** Netlify
+- **Générateur de Site Statique&nbsp;:** [Eleventy (11ty) v3](https://www.11ty.dev/)
+- **Modèles (Templating)&nbsp;:** Nunjucks (`.njk`), Markdown (`.md`)
+- **CMS&nbsp;:** Aucun (Site statique)
+- **Déploiement&nbsp;:** Netlify
 
 ## 🛠️ Fonctionnalités
 
-- **Support Multilingue :** Le contenu est structuré pour l'anglais (`src/en/`) et le français (`src/fr/`) avec des filtres personnalisés pour la localisation.
-- **Gestion des Données :** Utilise des fichiers YAML dans `src/_data/` pour les données globales du site et les chaînes de localisation.
-- **Pipeline d'Assets :** Copie directe (Passthrough copy) pour les images, les polices et le JS.
-- **Formatage des Dates :** Utilise `luxon` pour le formatage localisé des dates.
+- **Support Multilingue&nbsp;:** Le contenu est structuré pour l'anglais (`src/en/`) et le français (`src/fr/`) avec des filtres personnalisés pour la localisation.
+- **Gestion des Données&nbsp;:** Utilise des fichiers YAML dans `src/_data/` pour les données globales du site et les chaînes de localisation.
+- **Pipeline d'Assets&nbsp;:** Copie directe (Passthrough copy) pour les images, les polices et le JS.
+- **Formatage des Dates&nbsp;:** Utilise `luxon` pour le formatage localisé des dates.
 
 ## 📂 Structure du Projet
 
@@ -147,21 +147,21 @@ Le site est construit avec [Eleventy](https://www.11ty.dev/), un générateur de
 
 ### Installation
 
-1. Cloner le dépôt :
+1. Cloner le dépôt&nbsp;:
 
    ```bash
    git clone https://github.com/elismatiQ/11ty.elismatiq.com.git
    cd 11ty.elismatiq.com
    ```
 
-2. Installer les dépendances :
+2. Installer les dépendances&nbsp;:
    ```bash
    npm install
    ```
 
 ### Développement
 
-Démarrer le serveur de développement local avec rechargement à chaud :
+Démarrer le serveur de développement local avec rechargement à chaud&nbsp;:
 
 ```bash
 npm run dev
@@ -171,7 +171,7 @@ Le site sera disponible à l'adresse `http://localhost:4749`.
 
 ### Construction (Build)
 
-Construire le site pour la production :
+Construire le site pour la production&nbsp;:
 
 ```bash
 npm run build
@@ -181,7 +181,7 @@ La sortie sera générée dans le répertoire `_site/`.
 
 ### Nettoyage
 
-Supprimer le répertoire de sortie :
+Supprimer le répertoire de sortie&nbsp;:
 
 ```bash
 npm run clean
